@@ -1,139 +1,831 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoTravel Adventures</title>
-  <link rel="stylesheet" href="style1.css">
-</head>
-<body>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rasin Art & Home Decor Studio</title>
 
 
-<nav class="navbar">
-  <div class="logo">EcoTravel</div>
-  <ul class="nav-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#destinations">Destinations</a></li>
-    <li><a href="#testimonials">Reviews</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Explore the World, Sustainably 🌍</h1>
-    <p>Discover eco-friendly travel experiences that protect nature.</p>
-    <div class="hero-buttons">
-      <a href="#destinations" class="btn primary">Explore Trips</a>
-      <a href="#about" class="btn secondary">Learn More</a>
-    </div>
-  </div>
-</section>
+ 
 
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="main.js"></script>
+  <script src="main.js"></script>
 
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>About Us</h2>
-      <p>
-        We create sustainable travel experiences that support local communities
-        and preserve the environment while delivering unforgettable journeys.
-      </p>
-    </div>
-    <div class="about-card">
-      <h3>🌱 Eco Focus</h3>
-      <p>Every trip is designed to minimize environmental impact.</p>
-    </div>
-  </div>
-</section>
-
-
-<section  class="section">
-  <h2>Top Destinations</h2>
-
-  <div class="card-container">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
-      <h3>Goa</h3>
-      <p>Relax at beautiful beaches and eco resorts.Explore nature, wildlife and culture.</p>
-      <div class="card-footer">
-        <span class="price">₹999</span>
-        <a href="#" class="btn small">View</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80">
-      <h3>Sri Lanka</h3>
-      <p>Explore nature, wildlife and culture.Explore nature, wildlife and culture.</p>
-      <div class="card-footer">
-        <span class="price">₹1999</span>
-        <a href="#" class="btn small">View</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80">
-      <h3>Maldives</h3>
-      <p>Luxury eco stays with ocean views.Explore nature, wildlife and culture.</p>
-      <div class="card-footer">
-        <span class="price">₹2999</span>
-        <a href="#" class="btn small">View</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="testimonials">
-  <h2>What Our Travelers Say</h2>
-
-  <div class="testimonial-container">
-
-    <div class="testimonial-card">
-      
-      <div class="user">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg">
-        <div>
-          <h4>Priya</h4>
-          <span>India</span>
-        </div>
-        <p>“Amazing eco-friendly experience!”</p>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <p>“Loved every moment of the journey.”</p>
-      <div class="user">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg">
-        <div>
-          <h4>David</h4>
-          <span>USA</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <p>“Highly recommended travel service.”</p>
-      <div class="user">
-        <img src="https://randomuser.me/api/portraits/women/68.jpg">
-        <div>
-          <h4>Sophia</h4>
-          <span>Singapore</span>
-        </div>
-      </div>
-    </div>
-   
-</section>
-
-
-<footer id="contact" class="footer">
-  <p>© 2026 EcoTravel Adventures | info@ecotravel.com</p>
-</footer>
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
+
+
+  <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+  <div class="top-bar">
+
+    <p>
+      Luxury Interior Experiences Crafted With Elegance
+    </p>
+
+  </div>
+
+
+  <header class="header">
+
+    <div class="logo">
+
+      <h2>Rasin Studio</h2>
+
+    </div>
+
+    <nav class="navbar">
+
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+      <a href="#">Dashboard</a>
+
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="icon-btn" id="theme-toggle">
+        <i data-lucide="moon"></i>
+      </button>
+
+      <button class="icon-btn">
+        <i data-lucide="languages"></i>
+      </button>
+
+      <button class="secondary-btn">
+        LogIn
+      </button>
+
+      <button class="primary-btn">
+        SignUp
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <span class="hero-tag">
+        Premium Interior Experience
+      </span>
+
+      <h1>
+        Transforming Spaces Into Timeless Art
+      </h1>
+
+      <p>
+        Rasin Art & Home Decor Studio creates luxurious artistic interiors and handcrafted decor experiences designed for modern elegant living.
+      </p>
+
+      <div class="hero-buttons">
+
+        <button class="primary-btn">
+          Book Consultation
+        </button>
+
+        <button class="secondary-btn">
+          Explore Collection
+        </button>
+
+      </div>
+
+      <div class="hero-stats">
+
+        <div class="stat-box">
+
+          <h3>250+</h3>
+          <p>Projects</p>
+
+        </div>
+
+        <div class="stat-box">
+
+          <h3>10+</h3>
+          <p>Years Experience</p>
+
+        </div>
+
+        <div class="stat-box">
+
+          <h3>98%</h3>
+          <p>Satisfaction</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Interior Design">
+
+    </div>
+
+  </section>
+
+  <!-- TRUSTED SECTION -->
+
+  <section class="trusted-section">
+
+    <div class="trusted-grid">
+
+      <div class="trusted-card">
+        Luxury Villas
+      </div>
+
+      <div class="trusted-card">
+        Creative Studios
+      </div>
+
+      <div class="trusted-card">
+        Premium Apartments
+      </div>
+
+      <div class="trusted-card">
+        Boutique Hotels
+      </div>
+
+      <div class="trusted-card">
+        Art Spaces
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+
+  <section class="about-section">
+
+    <div class="about-images">
+
+      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop" alt="About">
+
+    </div>
+
+    <div class="about-content">
+
+      <span class="section-tag">
+        About Us
+      </span>
+
+      <h2>
+        Artistic Living Designed With Elegance
+      </h2>
+
+      <p>
+        We blend modern interior aesthetics with timeless artistic craftsmanship to create inspiring environments for homes and creative spaces.
+      </p>
+
+      <div class="about-features">
+
+        <div class="feature-item">
+
+          <i data-lucide="check"></i>
+
+          <span>Luxury Interior Styling</span>
+
+        </div>
+
+        <div class="feature-item">
+
+          <i data-lucide="check"></i>
+
+          <span>Creative Decor Solutions</span>
+
+        </div>
+
+        <div class="feature-item">
+
+          <i data-lucide="check"></i>
+
+          <span>Modern Artistic Concepts</span>
+
+        </div>
+
+      </div>
+
+      <button class="primary-btn">
+        Learn More
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section class="services-section">
+
+    <div class="section-title center">
+
+      <span class="section-tag">
+        Services
+      </span>
+
+      <h2>
+        Premium Interior & Decor Services
+      </h2>
+
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+
+        <i data-lucide="sofa"></i>
+
+        <h3>Interior Styling</h3>
+
+        <p>
+          Elegant modern styling tailored for premium residential spaces.
+        </p>
+
+        <a href="#">
+          Learn More
+        </a>
+
+      </div>
+
+      <div class="service-card">
+
+        <i data-lucide="palette"></i>
+
+        <h3>Art Consultation</h3>
+
+        <p>
+          Premium artistic consulting and creative decor planning.
+        </p>
+
+        <a href="#">
+          Learn More
+        </a>
+
+      </div>
+
+      <div class="service-card">
+
+        <i data-lucide="lamp-floor"></i>
+
+        <h3>Home Decor</h3>
+
+        <p>
+          Artistic decor collections curated for luxury living experiences.
+        </p>
+
+        <a href="#">
+          Learn More
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHY CHOOSE US -->
+
+  <section class="why-section">
+
+    <div class="section-title center">
+
+      <span class="section-tag">
+        Why Choose Us
+      </span>
+
+      <h2>
+        Crafted For Elegant Modern Living
+      </h2>
+
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+
+        <i data-lucide="sparkles"></i>
+
+        <h3>Premium Craftsmanship</h3>
+
+        <p>
+          Attention to detail in every artistic decor experience.
+        </p>
+
+      </div>
+
+      <div class="why-card">
+
+        <i data-lucide="layout-template"></i>
+
+        <h3>Personalized Concepts</h3>
+
+        <p>
+          Tailored design concepts built for your lifestyle.
+        </p>
+
+      </div>
+
+      <div class="why-card">
+
+        <i data-lucide="leaf"></i>
+
+        <h3>Sustainable Materials</h3>
+
+        <p>
+          Eco-conscious materials for timeless interiors.
+        </p>
+
+      </div>
+
+      <div class="why-card">
+
+        <i data-lucide="shield-check"></i>
+
+        <h3>Dedicated Support</h3>
+
+        <p>
+          End-to-end consultation and professional guidance.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PORTFOLIO -->
+
+  <section class="portfolio-section">
+
+    <div class="section-title center">
+
+      <span class="section-tag">
+        Portfolio
+      </span>
+
+      <h2>
+        Featured Interior Collections
+      </h2>
+
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card">
+
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="Portfolio">
+
+      </div>
+
+      <div class="portfolio-card">
+
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Portfolio">
+
+      </div>
+
+      <div class="portfolio-card">
+
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop" alt="Portfolio">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROCESS SECTION -->
+
+  <section class="process-section">
+
+    <div class="section-title center">
+
+      <span class="section-tag">
+        Our Process
+      </span>
+
+      <h2>
+        Simple & Elegant Workflow
+      </h2>
+
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+
+        <span>01</span>
+
+        <h3>Consultation</h3>
+
+        <p>
+          Understanding your style and vision.
+        </p>
+
+      </div>
+
+      <div class="process-card">
+
+        <span>02</span>
+
+        <h3>Concept Design</h3>
+
+        <p>
+          Curating artistic and modern concepts.
+        </p>
+
+      </div>
+
+      <div class="process-card">
+
+        <span>03</span>
+
+        <h3>Execution</h3>
+
+        <p>
+          Bringing your dream space to life.
+        </p>
+
+      </div>
+
+      <div class="process-card">
+
+        <span>04</span>
+
+        <h3>Final Styling</h3>
+
+        <p>
+          Delivering premium finishing touches.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+
+  <section class="testimonial-section">
+
+    <div class="section-title center">
+
+      <span class="section-tag">
+        Testimonials
+      </span>
+
+      <h2>
+        What Our Clients Say
+      </h2>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+
+        <p>
+          “Rasin Studio transformed our apartment into a timeless luxury experience.”
+        </p>
+
+        <h4>
+          Sarah Williams
+        </h4>
+
+      </div>
+
+      <div class="testimonial-card">
+
+        <p>
+          “Absolutely stunning design concepts with exceptional attention to detail.”
+        </p>
+
+        <h4>
+          Daniel Cooper
+        </h4>
+
+      </div>
+
+      <div class="testimonial-card">
+
+        <p>
+          “The perfect combination of modern luxury and artistic elegance.”
+        </p>
+
+        <h4>
+          Amelia Johnson
+        </h4>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRICING -->
+
+  <section class="pricing-section">
+
+    <div class="section-title center">
+
+      <span class="section-tag">
+        Pricing
+      </span>
+
+      <h2>
+        Flexible Interior Packages
+      </h2>
+
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card">
+
+        <h3>Basic</h3>
+
+        <h1>$199</h1>
+
+        <p>Perfect for small styling projects.</p>
+
+        <ul>
+
+          <li>Interior Consultation</li>
+          <li>Basic Styling</li>
+          <li>Email Support</li>
+
+        </ul>
+
+        <button class="secondary-btn full-width">
+          Get Started
+        </button>
+
+      </div>
+
+      <div class="pricing-card popular-card">
+
+        <span class="popular-badge">
+          Popular
+        </span>
+
+        <h3>Premium</h3>
+
+        <h1>$499</h1>
+
+        <p>Luxury interior transformation package.</p>
+
+        <ul>
+
+          <li>Full Design Planning</li>
+          <li>Premium Styling</li>
+          <li>Priority Support</li>
+
+        </ul>
+
+        <button class="primary-btn full-width">
+          Get Started
+        </button>
+
+      </div>
+
+      <div class="pricing-card">
+
+        <h3>Elite</h3>
+
+        <h1>$899</h1>
+
+        <p>Complete artistic luxury experience.</p>
+
+        <ul>
+
+          <li>Complete Home Styling</li>
+          <li>Exclusive Decor</li>
+          <li>Dedicated Expert</li>
+
+        </ul>
+
+        <button class="secondary-btn full-width">
+          Get Started
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+
+  <section class="faq-section">
+
+    <div class="section-title center">
+
+      <span class="section-tag">
+        FAQ
+      </span>
+
+      <h2>
+        Frequently Asked Questions
+      </h2>
+
+    </div>
+
+    <div class="faq-container">
+
+      <div class="faq-item">
+
+        <h3>
+          How does the consultation process work?
+        </h3>
+
+      </div>
+
+      <div class="faq-item">
+
+        <h3>
+          Do you offer remote interior services?
+        </h3>
+
+      </div>
+
+      <div class="faq-item">
+
+        <h3>
+          What is the average project duration?
+        </h3>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta-section">
+
+    <div class="cta-box">
+
+      <h2>
+        Let’s Create Your Dream Interior
+      </h2>
+
+      <p>
+        Book a consultation with our design experts today.
+      </p>
+
+      <div class="cta-buttons">
+
+        <button class="primary-btn">
+          Book Consultation
+        </button>
+
+        <button class="secondary-btn white-btn">
+          View Portfolio
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact-section">
+
+    <div class="contact-info">
+
+      <span class="section-tag">
+        Contact
+      </span>
+
+      <h2>
+        Let’s Discuss Your Space
+      </h2>
+
+      <p>
+        Connect with our experts and begin your premium interior journey.
+      </p>
+
+      <div class="contact-details">
+
+        <p>Email: hello@rasinstudio.com</p>
+        <p>Phone: +91 99999 99999</p>
+        <p>Location: Hyderabad, India</p>
+
+      </div>
+
+    </div>
+
+    <form class="contact-form">
+
+      <input type="text" placeholder="Your Name">
+
+      <input type="email" placeholder="Your Email">
+
+      <input type="text" placeholder="Project Type">
+
+      <textarea placeholder="Tell us about your project"></textarea>
+
+      <button class="primary-btn full-width">
+        Send Message
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h2>Rasin Studio</h2>
+
+        <p>
+          Luxury artistic interiors designed for timeless modern living.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3>Quick Links</h3>
+
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Pricing</a>
+
+      </div>
+
+      <div>
+
+        <h3>Services</h3>
+
+        <a href="#">Interior Styling</a>
+        <a href="#">Decor Consultation</a>
+        <a href="#">Space Planning</a>
+
+      </div>
+
+      <div>
+
+        <h3>Newsletter</h3>
+
+        <p>
+          Subscribe for interior inspiration and updates.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Rasin Art & Home Decor Studio
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- JS -->
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+
 </html>
