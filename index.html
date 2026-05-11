@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Rasin Art & Home Decor Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,14 +34,6 @@
 
 <body>
 
-  <div class="top-bar">
-
-    <p>
-      Luxury Interior Experiences Crafted With Elegance
-    </p>
-
-  </div>
-
 
   <header class="header">
 
@@ -49,36 +42,60 @@
       <h2>Rasin Studio</h2>
 
     </div>
+    
 
     <nav class="navbar">
 
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
-      <a href="#">Dashboard</a>
+  <!-- HOME DROPDOWN -->
 
-    </nav>
+  <div class="nav-dropdown">
 
+    <a href="#" class="nav-home">
+
+  Home
+
+  <i data-lucide="chevron-down"></i>
+
+</a>
+
+    <div class="dropdown-menu">
+
+      <a href="index.html">
+        Home 1
+      </a>
+
+      <a href="home2.html">
+        Home 2
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- OTHER LINKS -->
+
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Pricing</a>
+  <a href="#">Contact</a>
+  <a href="#">Dashboard</a>
+
+</nav>
     <div class="header-actions">
 
       <button class="icon-btn" id="theme-toggle">
         <i data-lucide="moon"></i>
       </button>
+    <button class="rtl-btn">RTL</button>
+</button>
+      
 
-      <button class="icon-btn">
-        <i data-lucide="languages"></i>
-      </button>
-
-      <button class="secondary-btn">
+      <button class="primary-btn">
         LogIn
       </button>
 
-      <button class="primary-btn">
-        SignUp
-      </button>
+      
 
     </div>
 
@@ -101,7 +118,7 @@
       <p>
         Rasin Art & Home Decor Studio creates luxurious artistic interiors and handcrafted decor experiences designed for modern elegant living.
       </p>
-
+    
       <div class="hero-buttons">
 
         <button class="primary-btn">
@@ -149,7 +166,6 @@
 
   </section>
 
-  <!-- TRUSTED SECTION -->
 
   <section class="trusted-section">
 
@@ -379,45 +395,7 @@
 
   </section>
 
-  <!-- PORTFOLIO -->
-
-  <section class="portfolio-section">
-
-    <div class="section-title center">
-
-      <span class="section-tag">
-        Portfolio
-      </span>
-
-      <h2>
-        Featured Interior Collections
-      </h2>
-
-    </div>
-
-    <div class="portfolio-grid">
-
-      <div class="portfolio-card">
-
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="Portfolio">
-
-      </div>
-
-      <div class="portfolio-card">
-
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Portfolio">
-
-      </div>
-
-      <div class="portfolio-card">
-
-        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop" alt="Portfolio">
-
-      </div>
-
-    </div>
-
-  </section>
+  
 
   <!-- PROCESS SECTION -->
 
@@ -702,12 +680,10 @@
       <div class="cta-buttons">
 
         <button class="primary-btn">
-          Book Consultation
+          View Services
         </button>
 
-        <button class="secondary-btn white-btn">
-          View Portfolio
-        </button>
+        
 
       </div>
 
@@ -774,6 +750,28 @@
         <p>
           Luxury artistic interiors designed for timeless modern living.
         </p>
+
+         <!-- SOCIAL ICONS -->
+
+  <div class="social-icons">
+
+  <a href="#">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="#">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+
+  <a href="#">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
+
+  <a href="#">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+
+</div>
 
       </div>
 
