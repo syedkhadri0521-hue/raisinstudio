@@ -934,8 +934,8 @@ body.dark-mode .header {
 
 .cta-box {
 
-  padding: 100px;
-
+  padding: 70px;
+  margin-bottom:1px ;
   border-radius: 40px;
 
   background: var(--primary-color);
@@ -971,70 +971,7 @@ body.dark-mode .header {
 }
 
 
-/* =========================
-   CONTACT
-========================= */
 
-.contact-section {
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  gap: 60px;
-}
-
-.contact-info h2 {
-
-  font-size: 52px;
-
-  font-family: 'Playfair Display', serif;
-
-  margin-bottom: 24px;
-}
-
-.contact-info p {
-
-  line-height: 1.8;
-
-  color: var(--light-text);
-
-  margin-bottom: 24px;
-}
-
-.contact-form {
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-
-  width: 100%;
-
-  padding: 18px 20px;
-
-  border-radius: 18px;
-
-  border: 1px solid var(--border-color);
-
-  background: var(--card-bg);
-
-  color: var(--text-color);
-
-  font-size: 15px;
-
-  outline: none;
-}
-
-.contact-form textarea {
-
-  height: 180px;
-
-  resize: none;
-}
 
 /* =========================
    FOOTER
@@ -1155,6 +1092,7 @@ body.dark-mode .header {
 
   color:var(--light-text);
 }
+
 /* =========================
    RESPONSIVE
 ========================= */
