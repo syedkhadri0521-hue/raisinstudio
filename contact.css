@@ -666,6 +666,36 @@ body.dark-mode .header {
 
   color:var(--light-text);
 }
+.footer-bottom{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:24px;
+
+  flex-wrap:wrap;
+
+  margin-top:60px;
+
+  padding-top:30px;
+
+  border-top:1px solid var(--border-color);
+}
+
+.footer-bottom p,
+.footer-bottom a{
+
+  margin:0;
+
+  color:var(--light-text);
+
+  text-decoration:none;
+
+  font-size:15px;
+}
 
 /* RESPONSIVE */
 
