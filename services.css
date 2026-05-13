@@ -579,18 +579,25 @@ body.dark-mode .header {
 
 .category-card{
 
+ background:var(--card-bg);
+
+  border-radius:34px;
+
   overflow:hidden;
 
-  border-radius:30px;
-
-  background:var(--card-bg);
-
   border:1px solid var(--border-color);
+
+  transition:0.3s ease;
+}
+
+.category-card:hover{
+
+  transform:translateY(-10px);
 }
 
 .category-image img{
 
-  height:320px;
+  height:220px;
 
   object-fit:cover;
 }
@@ -612,7 +619,158 @@ body.dark-mode .header {
   color:var(--light-text);
 
   line-height:1.7;
+  margin-bottom: 10px;
 }
+.link-btn{
+  padding:14px 28px;
+
+  border-radius:999px;
+
+  background:var(--primary-color);
+
+  color:white;
+
+  border:none;
+
+  cursor:pointer;
+
+  font-size:14px;
+  font-weight:600;
+
+  transition:0.3s ease;
+}
+
+/* =========================
+   ADDITIONAL SERVICES
+========================= */
+
+.additional-services{
+
+  background:var(--bg-color);
+}
+
+/* TITLE */
+
+.additional-services .section-title{
+
+  max-width:800px;
+
+  margin:auto auto 70px;
+}
+
+.additional-services .section-title p{
+
+  margin-top:20px;
+
+  color:var(--light-text);
+
+  line-height:1.8;
+}
+
+/* GRID */
+
+.additional-services-grid{
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:30px;
+}
+
+/* CARD */
+
+.additional-service-card{
+
+  padding:36px;
+
+  border-radius:32px;
+
+  background:var(--card-bg);
+
+  border:1px solid var(--border-color);
+
+  transition:0.3s ease;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.additional-service-card:hover{
+
+  transform:translateY(-10px);
+
+  border-color:var(--primary-color);
+}
+
+/* TOP */
+
+.service-top{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:50px;
+}
+
+/* NUMBER */
+
+.service-number{
+
+  font-size:52px;
+
+  font-weight:700;
+
+  color:rgba(166,106,76,0.18);
+
+  line-height:1;
+}
+
+/* ARROW */
+
+.service-arrow{
+
+  width:54px;
+  height:54px;
+
+  border-radius:50%;
+
+  background:var(--secondary-color);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.service-arrow i{
+
+  width:24px;
+  height:24px;
+
+  color:var(--primary-color);
+}
+
+/* TITLE */
+
+.additional-service-card h3{
+
+  font-size:28px;
+
+  margin-bottom:18px;
+}
+
+/* TEXT */
+
+.additional-service-card p{
+
+  color:var(--light-text);
+
+  line-height:1.8;
+}
+
+
+
 
 /* PROCESS */
 
@@ -771,6 +929,7 @@ body.dark-mode .header {
 .footer{
 
   padding:100px 8% 30px;
+  margin-top: ;
 
   border-top:1px solid var(--border-color);
 }

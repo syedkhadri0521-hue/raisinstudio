@@ -753,6 +753,10 @@ a{
 
 /* FOOTER BOTTOM */
 
+.footer{
+  margin-top: -50px;
+}
+
 .footer-bottom{
 
   margin-top:60px;

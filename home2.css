@@ -400,6 +400,10 @@ section{
   bottom:18%;
 }
 
+.portfolio-section{
+  margin-top: -80px;
+}
+
 /* SHOWCASE */
 
 .luxury-showcase{
@@ -411,6 +415,10 @@ section{
   margin-bottom: 10px;
 
   align-items:center;
+}
+
+.process-section{
+  margin-top: -90px;
 }
 
 .showcase-left h2{
@@ -504,6 +512,10 @@ section{
   margin-top: 40px;
 }
 
+.services-section{
+  margin-top: -100px;
+}
+
 .service-card{
 
   padding:40px;
@@ -546,6 +558,10 @@ section{
   line-height:1.8;
 }
 
+.portfolio-section{
+  margin-top: -80px;
+}
+
 /* MASONRY */
 
 .masonry-grid{
@@ -580,6 +596,7 @@ section{
   grid-template-columns:repeat(4,1fr);
   padding-top: 5px;
   padding-bottom: 5px;
+  
 
   gap:30px;
 }
@@ -615,6 +632,9 @@ section{
 
   gap:30px;
 }
+.testimonial-section{
+  margin-top: -100px;
+}
 
 .testimonial-card{
 
@@ -639,6 +659,7 @@ section{
 .cta-box{
 
   padding:100px;
+  margin-top: -90px;
 
   border-radius:40px;
 
@@ -683,6 +704,7 @@ section{
 .footer{
 
   padding:100px 8% 30px;
+  margin-top: -60px;
 
   border-top:1px solid var(--border-color);
 }
