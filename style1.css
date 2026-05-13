@@ -379,14 +379,14 @@ body.dark-mode .header {
 
   color: var(--primary-color);
 }
-.rtl-btn{
+.icon-btn rtl-btn{
    padding: 14px 20px;
 
   border-radius: 999px;
 
   font-size: 14px;
   font-weight: 600;
-
+  color: var(--primary-color);
   cursor: pointer;
 
   transition: var(--transition);
@@ -1091,6 +1091,69 @@ body.dark-mode .header {
   text-align:center;
 
   color:var(--light-text);
+}
+
+/* RTL MODE */
+
+body.rtl-mode{
+
+  direction: rtl;
+}
+
+/* FIX FLEX */
+
+body.rtl-mode .header,
+body.rtl-mode .navbar,
+body.rtl-mode .hero,
+body.rtl-mode .about-section,
+body.rtl-mode .services-grid,
+body.rtl-mode .why-grid,
+body.rtl-mode .process-grid,
+body.rtl-mode .pricing-grid,
+body.rtl-mode .footer-grid{
+
+  direction: rtl;
+}
+
+body.dark-mode .header{
+
+  background:rgba(17,17,17,0.9);
+}
+/* DARK MODE */
+
+body.dark-mode{
+
+  --bg-color:#111111;
+  --card-bg:#1B1B1B;
+
+  --text-color:#ffffff;
+  --light-text:#B3B3B3;
+
+  --border-color:#2A2A2A;
+}
+
+/* HEADER */
+
+body.dark-mode .header{
+
+  background:rgba(17,17,17,0.95);
+}
+
+/* RTL */
+
+body.rtl-mode{
+
+  direction:rtl;
+}
+
+/* SMOOTH */
+
+*{
+
+  transition:
+  background 0.3s ease,
+  color 0.3s ease,
+  border-color 0.3s ease;
 }
 
 /* =========================
