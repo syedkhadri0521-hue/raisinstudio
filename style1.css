@@ -1146,6 +1146,11 @@ body.dark-mode .header {
 
   font-size:15px;
 }
+.footer-bottom{
+ display: flex;
+ gap:100px;
+ justify-content: space-between;
+}
 
 /* RTL MODE */
 

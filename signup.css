@@ -1,0 +1,290 @@
+body {
+
+  font-family: 'Inter', sans-serif;
+
+  background: var(--bg-color);
+
+  color: var(--text-color);
+
+  transition: var(--transition);
+
+  overflow-x: hidden;
+}
+/* ===================================================
+/* ===================================================
+   SIGNUP PAGE
+=================================================== */
+/* ===================================================
+   SIGNUP PAGE
+=================================================== */
+
+.clean-signup-page{
+
+  min-height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:24px;
+
+  background:
+  linear-gradient(
+    180deg,
+    #faf7f4,
+    #ffffff
+  );
+}
+
+/* ===================================================
+   CARD
+=================================================== */
+
+.clean-signup-card{
+
+  width:100%;
+
+  max-width:400px;
+
+  background:white;
+
+  border:1px solid #ececec;
+
+  border-radius:32px;
+
+  padding:24px 34px;
+
+  box-shadow:
+  0 16px 40px rgba(0,0,0,0.05);
+}
+
+/* ===================================================
+   LOGO
+=================================================== */
+
+.signup-logo{
+
+  display:block;
+
+  text-decoration:none;
+
+  color:#111111;
+
+  margin-bottom:34px;
+}
+
+.signup-logo h1{
+
+  font-size:32px;
+
+  font-family:'Playfair Display',serif;
+}
+
+/* ===================================================
+   HEADING
+=================================================== */
+
+.signup-heading{
+
+  margin-bottom:32px;
+}
+
+.signup-heading h2{
+
+  font-size:32px;
+
+  margin-bottom:10px;
+}
+
+.signup-heading p{
+
+  color:#777777;
+
+  line-height:1.7;
+
+  font-size:15px;
+}
+
+/* ===================================================
+   FORM
+=================================================== */
+
+.clean-signup-form{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:20px;
+}
+
+/* ===================================================
+   INPUT GROUP
+=================================================== */
+
+.signup-input-group label{
+
+  display:block;
+
+  margin-bottom:10px;
+
+  font-size:14px;
+
+  font-weight:500;
+}
+
+/* INPUT */
+
+.signup-input-group input{
+
+  width:90%;
+
+  height:32px;
+
+  border:1px solid #dddddd;
+
+  border-radius:4px;
+
+  padding:0 14px;
+
+  font-size:12px;
+
+  outline:none;
+
+  transition:0.3s ease;
+
+  background:#fafafa;
+}
+
+/* FOCUS */
+
+.signup-input-group input:focus{
+
+  border-color:#B67952;
+
+  background:white;
+
+  box-shadow:
+  0 0 0 4px rgba(182,121,82,0.08);
+}
+
+/* ===================================================
+   OPTIONS
+=================================================== */
+
+.signup-options{
+
+  margin-top:-2px;
+}
+
+/* TERMS */
+
+.terms-option{
+
+  display:flex;
+  align-items:center;
+
+  gap:8px;
+
+  font-size:14px;
+
+  color:#666666;
+}
+
+/* ===================================================
+   BUTTON
+=================================================== */
+
+.signup-btn{
+
+  width:100%;
+
+  height:48px;
+
+  border:none;
+
+  border-radius:16px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #B67952,
+    #C98B63
+  );
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.35s ease;
+
+  margin-top:6px;
+}
+
+/* HOVER */
+
+.signup-btn:hover{
+
+  transform:translateY(-2px);
+
+  box-shadow:
+  0 14px 28px rgba(182,121,82,0.22);
+}
+
+/* ===================================================
+   SWITCH LOGIN
+=================================================== */
+
+.switch-login{
+
+  margin-top:30px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:6px;
+
+  flex-wrap:wrap;
+
+  font-size:14px;
+}
+
+.switch-login p{
+
+  color:#666666;
+}
+
+.switch-login a{
+
+  text-decoration:none;
+
+  color:#111111;
+
+  font-weight:600;
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:768px){
+
+  .clean-signup-card{
+
+    padding:34px 24px;
+  }
+
+  .signup-logo h1{
+
+    font-size:34px;
+  }
+
+  .signup-heading h2{
+
+    font-size:32px;
+  }
+}

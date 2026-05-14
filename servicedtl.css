@@ -323,14 +323,14 @@ body.dark-mode .header {
 
   color: var(--primary-color);
 }
-.rtl-btn{
+.icon-btn rtl-btn{
    padding: 14px 20px;
 
   border-radius: 999px;
 
   font-size: 14px;
   font-weight: 600;
-
+  color: var(--primary-color);
   cursor: pointer;
 
   transition: var(--transition);
@@ -792,7 +792,11 @@ body.dark-mode .header {
 
   font-size:15px;
 }
-
+.footer-bottom{
+ display: flex;
+ gap:100px;
+ justify-content: space-between;
+}
 /* RESPONSIVE */
 
 @media(max-width:1200px){

@@ -37,11 +37,17 @@
      PREMIUM SIDEBAR
 =================================================== -->
 
-<aside class="dashboard-sidebar">
+<!-- ===================================================
+     PREMIUM ADMIN DASHBOARD
+=================================================== -->
 
-  <!-- TOP -->
+<div class="dashboard-layout">
 
-  <div class="sidebar-top">
+  <!-- ===================================================
+       SIDEBAR
+  =================================================== -->
+
+  <aside class="sidebar">
 
     <!-- LOGO -->
 
@@ -50,7 +56,7 @@
       <h2>Rasin Studio</h2>
 
       <p>
-        Admin Dashboard
+        Art & Home Decor Dashboard
       </p>
 
     </div>
@@ -77,11 +83,17 @@
 
       <a href="#">
 
-        <i data-lucide="shopping-cart"></i>
+        <i data-lucide="briefcase-business"></i>
+
+        <span>Projects</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="shopping-bag"></i>
 
         <span>Orders</span>
-
-        <small>12</small>
 
       </a>
 
@@ -90,14 +102,6 @@
         <i data-lucide="users"></i>
 
         <span>Customers</span>
-
-      </a>
-
-      <a href="#">
-
-        <i data-lucide="briefcase-business"></i>
-
-        <span>Projects</span>
 
       </a>
 
@@ -114,16 +118,6 @@
         <i data-lucide="message-circle"></i>
 
         <span>Messages</span>
-
-        <small>5</small>
-
-      </a>
-
-      <a href="#">
-
-        <i data-lucide="bell"></i>
-
-        <span>Notifications</span>
 
       </a>
 
@@ -145,137 +139,137 @@
 
     </nav>
 
-  </div>
+    <!-- SIDEBAR BOTTOM -->
 
-  <!-- BOTTOM -->
+    <div class="sidebar-bottom">
 
-  <div class="sidebar-bottom">
+      <div class="admin-profile">
 
-    <!-- PROFILE -->
+        <img 
+          src="https://i.pravatar.cc/120" 
+          alt="admin"
+        >
 
-    <div class="sidebar-profile">
+        <div>
 
-      <img 
-        src="https://i.pravatar.cc/100" 
-        alt="profile"
-      >
+          <h4>Alex Carter</h4>
 
-      <div>
+          <span>Creative Director</span>
 
-        <h4>Alex Carter</h4>
-
-        <span>Creative Director</span>
+        </div>
 
       </div>
-
-    </div>
-
-    <!-- ACTIONS -->
-
-    <div class="sidebar-actions">
-
-      <button class="icon-btn" id="theme-toggle">
-
-        <i data-lucide="moon"></i>
-
-      </button>
-
-      <button class="rtl-btn">
-        RTL
-      </button>
 
       <button class="logout-btn">
 
         <i data-lucide="log-out"></i>
 
+        Logout
+
       </button>
 
     </div>
 
-  </div>
-
-</aside>
-<!-- ===================================================
-     RASIN STUDIO — ADMIN DASHBOARD
-=================================================== -->
-
-<section class="dashboard-wrapper">
+  </aside>
 
   <!-- ===================================================
-       TOP NAVBAR
+       MAIN CONTENT
   =================================================== -->
 
-  <header class="dashboard-topbar">
+  <main class="dashboard-main">
 
-    <!-- LEFT -->
+    <!-- ===================================================
+         TOPBAR
+    =================================================== -->
 
+    <header class="dashboard-topbar">
 
-      <div class="welcome-text">
+      <!-- LEFT -->
 
-        <h1>
-          Good Morning, Alex 👋
-        </h1>
+      <div>
 
-        <p>
-          Here’s what’s happening in your studio today.
-        </p>
+        <!-- BREADCRUMB -->
+
+        <div class="breadcrumb">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <i data-lucide="chevron-right"></i>
+
+          <span>
+            Dashboard
+          </span>
+
+        </div>
+
+        <!-- TITLE -->
+
+        <div class="welcome-text">
+
+          <h1>
+            Good Morning, Alex 👋
+          </h1>
+
+          <p>
+            Here’s the latest overview of Rasin Art & Home Decor Studio.
+          </p>
+
+        </div>
 
       </div>
 
-    </div>
+      <!-- RIGHT -->
 
-    <!-- RIGHT -->
+      <div class="topbar-actions">
 
-    <div class="topbar-right">
+        <!-- SEARCH -->
 
-      <!-- SEARCH -->
+        <div class="search-box">
 
-      <div class="dashboard-search">
+          <i data-lucide="search"></i>
 
-        <i data-lucide="search"></i>
+          <input 
+            type="text" 
+            placeholder="Search anything..."
+          >
 
-        <input 
-          type="text" 
-          placeholder="Search projects, clients or orders..."
-        >
+        </div>
+
+        <!-- ICONS -->
+
+        <button class="icon-btn">
+
+          <i data-lucide="bell"></i>
+
+          <span class="badge">4</span>
+
+        </button>
+
+        <button class="icon-btn">
+
+          <i data-lucide="message-square"></i>
+
+        </button>
+
+        <button class="icon-btn" id="theme-toggle">
+
+  <i data-lucide="moon"></i>
+
+</button>
 
       </div>
 
-      <!-- ICONS -->
+    </header>
 
-      <button class="icon-btn notification-btn">
+    <!-- ===================================================
+         STATS
+    =================================================== -->
 
-        <i data-lucide="bell"></i>
+    <section class="stats-grid">
 
-        <span class="notification-badge">
-          3
-        </span>
-
-      </button>
-
-      <button class="icon-btn">
-
-        <i data-lucide="message-circle"></i>
-
-      </button>
-
-      
-
-    </div>
-
-  </header>
-
-  <!-- ===================================================
-       STATS CARDS
-  =================================================== -->
-
-  <section class="stats-grid">
-
-    <!-- CARD -->
-
-    <div class="stats-card">
-
-      <div class="stats-top">
+      <div class="stats-card">
 
         <div class="stats-icon">
 
@@ -283,31 +277,35 @@
 
         </div>
 
-        <span class="growth positive">
-          +12%
-        </span>
+        <h2>$84,240</h2>
+
+        <h3>Total Revenue</h3>
+
+        <p>
+          +18% growth from last month 🚀
+        </p>
 
       </div>
 
-      <h2>
-        $48,240
-      </h2>
+      <div class="stats-card">
 
-      <h3>
-        Total Revenue
-      </h3>
+        <div class="stats-icon">
 
-      <p>
-        Sales are climbing steadily 🚀
-      </p>
+          <i data-lucide="shopping-cart"></i>
 
-    </div>
+        </div>
 
-    <!-- CARD -->
+        <h2>1,248</h2>
 
-    <div class="stats-card">
+        <h3>Orders</h3>
 
-      <div class="stats-top">
+        <p>
+          126 new luxury orders received.
+        </p>
+
+      </div>
+
+      <div class="stats-card">
 
         <div class="stats-icon">
 
@@ -315,451 +313,296 @@
 
         </div>
 
-        <span class="growth positive">
-          +18%
-        </span>
+        <h2>842</h2>
 
-      </div>
-
-      <h2>
-        1,248
-      </h2>
-
-      <h3>
-        New Customers
-      </h3>
-
-      <p>
-        You’re doing great this week!
-      </p>
-
-    </div>
-
-    <!-- CARD -->
-
-    <div class="stats-card">
-
-      <div class="stats-top">
-
-        <div class="stats-icon">
-
-          <i data-lucide="shopping-bag"></i>
-
-        </div>
-
-        <span class="growth positive">
-          +8%
-        </span>
-
-      </div>
-
-      <h2>
-        386
-      </h2>
-
-      <h3>
-        Orders
-      </h3>
-
-      <p>
-        Orders increased from last month.
-      </p>
-
-    </div>
-
-    <!-- CARD -->
-
-    <div class="stats-card">
-
-      <div class="stats-top">
-
-        <div class="stats-icon">
-
-          <i data-lucide="activity"></i>
-
-        </div>
-
-        <span class="growth negative">
-          -2%
-        </span>
-
-      </div>
-
-      <h2>
-        5.6%
-      </h2>
-
-      <h3>
-        Conversion Rate
-      </h3>
-
-      <p>
-        Audience engagement remains strong.
-      </p>
-
-    </div>
-
-  </section>
-
-  <!-- ===================================================
-       ANALYTICS
-  =================================================== -->
-
-  <section class="dashboard-grid">
-
-    <!-- LEFT -->
-
-    <div class="analytics-card">
-
-      <div class="card-header">
-
-        <div>
-
-          <h2>
-            Revenue Overview
-          </h2>
-
-          <p>
-            Your audience is highly active today.
-          </p>
-
-        </div>
-
-        <button class="primary-btn">
-          Export Report
-        </button>
-
-      </div>
-
-      <!-- CHART PLACEHOLDER -->
-
-      <div class="chart-placeholder">
-
-        <div class="chart-line"></div>
-
-      </div>
-
-      <!-- BOTTOM STATS -->
-
-      <div class="analytics-stats">
-
-        <div>
-
-          <h3>
-            $18.2K
-          </h3>
-
-          <span>
-            Weekly Revenue
-          </span>
-
-        </div>
-
-        <div>
-
-          <h3>
-            92%
-          </h3>
-
-          <span>
-            Client Satisfaction
-          </span>
-
-        </div>
-
-        <div>
-
-          <h3>
-            1.8K
-          </h3>
-
-          <span>
-            New Visitors
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- RIGHT PANEL -->
-
-    <div class="activity-panel">
-
-      <div class="card-header">
-
-        <div>
-
-          <h2>
-            Team Activity
-          </h2>
-
-          <p>
-            3 tasks need your attention.
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- ACTIVITY -->
-
-      <div class="activity-item">
-
-        <div class="activity-dot"></div>
-
-        <div>
-
-          <h4>
-            Design review at 4:00 PM
-          </h4>
-
-          <p>
-            Luxury apartment project discussion.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="activity-item">
-
-        <div class="activity-dot"></div>
-
-        <div>
-
-          <h4>
-            New client inquiry received
-          </h4>
-
-          <p>
-            Premium villa interior consultation.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="activity-item">
-
-        <div class="activity-dot"></div>
-
-        <div>
-
-          <h4>
-            Team completed 92% goals 🎉
-          </h4>
-
-          <p>
-            Excellent weekly progress achieved.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ===================================================
-       RECENT ORDERS
-  =================================================== -->
-
-  <section class="orders-section">
-
-    <div class="card-header">
-
-      <div>
-
-        <h2>
-          Recent Orders
-        </h2>
+        <h3>Customers</h3>
 
         <p>
-          Manage and track recent customer purchases.
+          Client engagement is highly active.
         </p>
 
       </div>
 
-    </div>
+      <div class="stats-card">
 
-    <!-- TABLE -->
+        <div class="stats-icon">
 
-    <div class="table-wrapper">
+          <i data-lucide="star"></i>
 
-      <table class="orders-table">
+        </div>
 
-        <thead>
+        <h2>4.9</h2>
 
-          <tr>
-
-            <th>Customer</th>
-            <th>Order ID</th>
-            <th>Product</th>
-            <th>Status</th>
-            <th>Amount</th>
-            <th>Date</th>
-
-          </tr>
-
-        </thead>
-
-        <tbody>
-
-          <tr>
-
-            <td>Olivia Brown</td>
-            <td>#RS1024</td>
-            <td>Luxury Decor Package</td>
-            <td>
-              <span class="status completed">
-                Completed
-              </span>
-            </td>
-            <td>$1,280</td>
-            <td>12 Jul 2026</td>
-
-          </tr>
-
-          <tr>
-
-            <td>Daniel Smith</td>
-            <td>#RS1025</td>
-            <td>Interior Consultation</td>
-            <td>
-              <span class="status pending">
-                Pending
-              </span>
-            </td>
-            <td>$480</td>
-            <td>13 Jul 2026</td>
-
-          </tr>
-
-          <tr>
-
-            <td>Emma Wilson</td>
-            <td>#RS1026</td>
-            <td>Space Planning</td>
-            <td>
-              <span class="status cancelled">
-                Cancelled
-              </span>
-            </td>
-            <td>$620</td>
-            <td>14 Jul 2026</td>
-
-          </tr>
-
-        </tbody>
-
-      </table>
-
-    </div>
-
-  </section>
-
-</section>
- <!-- FOOTER -->
-
-  <footer class="footer">
-
-    <div class="footer-grid">
-
-      <div>
-
-        <h2>Rasin Studio</h2>
+        <h3>Client Rating</h3>
 
         <p>
-          Luxury artistic interiors designed for timeless modern living.
+          Premium satisfaction maintained ✨
         </p>
 
-        <div class="social-icons">
+      </div>
 
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+    </section>
 
-          <a href="#">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
+    <!-- ===================================================
+         MAIN GRID
+    =================================================== -->
 
-          <a href="#">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
+    <section class="dashboard-grid">
 
-          <a href="#">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
+      <!-- LEFT -->
+
+      <div class="dashboard-left">
+
+        <!-- REVENUE -->
+
+        <div class="dashboard-card large-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h2>Revenue Analytics</h2>
+
+              <p>
+                Your business performance is growing steadily.
+              </p>
+
+            </div>
+
+            <button class="primary-btn">
+              Download Report
+            </button>
+
+          </div>
+
+          <div class="chart-placeholder">
+
+            <div class="chart-line"></div>
+
+          </div>
+
+        </div>
+
+        <!-- RECENT ORDERS -->
+
+        <div class="dashboard-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h2>Recent Orders</h2>
+
+              <p>
+                Latest luxury decor purchases.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="table-wrapper">
+
+            <table class="orders-table">
+
+              <thead>
+
+                <tr>
+
+                  <th>Customer</th>
+                  <th>Product</th>
+                  <th>Status</th>
+                  <th>Amount</th>
+
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+
+                  <td>Olivia Brown</td>
+                  <td>Luxury Sofa</td>
+                  <td>
+                    <span class="status completed">
+                      Completed
+                    </span>
+                  </td>
+                  <td>$1,280</td>
+
+                </tr>
+
+                <tr>
+
+                  <td>Daniel Smith</td>
+                  <td>Decor Package</td>
+                  <td>
+                    <span class="status pending">
+                      Pending
+                    </span>
+                  </td>
+                  <td>$820</td>
+
+                </tr>
+
+                <tr>
+
+                  <td>Emma Wilson</td>
+                  <td>Wall Art</td>
+                  <td>
+                    <span class="status cancelled">
+                      Cancelled
+                    </span>
+                  </td>
+                  <td>$430</td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
 
         </div>
 
       </div>
 
-      <div>
+      <!-- RIGHT -->
 
-        <h3>Quick Links</h3>
+      <div class="dashboard-right">
 
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Blog</a>
-        <a href="#">Pricing</a>
+        <!-- TASKS -->
+
+        <div class="dashboard-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h2>Tasks</h2>
+
+              <p>
+                3 tasks require attention.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="task-item">
+
+            <input type="checkbox">
+
+            <span>
+              Finalize villa decor concept
+            </span>
+
+          </div>
+
+          <div class="task-item">
+
+            <input type="checkbox" checked>
+
+            <span>
+              Client meeting completed
+            </span>
+
+          </div>
+
+          <div class="task-item">
+
+            <input type="checkbox">
+
+            <span>
+              Upload new product collection
+            </span>
+
+          </div>
+
+        </div>
+
+        <!-- TEAM ACTIVITY -->
+
+        <div class="dashboard-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h2>Team Activity</h2>
+
+              <p>
+                Latest updates from your team.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="activity-item">
+
+            <div class="activity-dot"></div>
+
+            <div>
+
+              <h4>
+                Design review scheduled
+              </h4>
+
+              <p>
+                Meeting at 4:00 PM today.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="activity-item">
+
+            <div class="activity-dot"></div>
+
+            <div>
+
+              <h4>
+                New client inquiry received
+              </h4>
+
+              <p>
+                Premium interior consultation booked.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
-      <div>
+    </section>
 
-        <h3>Services</h3>
+  </main>
 
-        <a href="#">Interior Styling</a>
-        <a href="#">Decor Consultation</a>
-        <a href="#">Space Planning</a>
-
-      </div>
-
-      <div>
-
-        <h3>Support</h3>
-
-  <a href="#">Contact Us</a>
-
-  <a href="#">Privacy Policy</a>
-
-  <a href="#">Terms & Conditions</a>
-
-  <a href="#">Help Center</a>
-
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      <p>
-        © 2026 Rasin Art & Home Decor Studio
-      </p>
-     <a href="#">Privacy Policy</a>
-
-  <a href="#">Cookies</a>
-
-    </div>
-
-  </footer>
-
-  <!-- ICONS -->
+</div>
 
 
+<!-- LUCIDE -->
 
-<script>
-    lucide.createIcons();
-  </script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 
 <!-- MAIN JS -->
 
 <script src="main.js"></script>
+
+<!-- INIT ICONS -->
+
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
 
 </body>
 </html>
