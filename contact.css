@@ -398,7 +398,7 @@ body.dark-mode .header {
 
   display:flex;
   flex-direction:column;
-
+  
   gap:20px;
 }
 
@@ -424,8 +424,8 @@ body.dark-mode .header {
 
 .modern-contact-icon{
 
-  width:64px;
-  height:64px;
+  width:44px;
+  height:44px;
 
   border-radius:20px;
 
@@ -457,7 +457,7 @@ body.dark-mode .header {
 
   margin-top:6px;
 
-  font-size:22px;
+  font-size:14px;
 }
 
 /* =========================
