@@ -64,6 +64,265 @@ section{
   padding:14px;
 }
 
+/* ===================================================
+   DASHBOARD LAYOUT
+=================================================== */
+
+body{
+
+  background:#f7f7f7;
+}
+
+/* ===================================================
+   SIDEBAR
+=================================================== */
+
+.dashboard-sidebar{
+
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:290px;
+  height:100vh;
+
+  background:white;
+
+  border-right:1px solid var(--border-color);
+
+  padding:28px 22px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  z-index:1000;
+}
+
+/* TOP */
+
+.sidebar-top{
+
+  display:flex;
+  flex-direction:column;
+}
+
+/* LOGO */
+
+.sidebar-logo{
+
+  padding-bottom:30px;
+
+  border-bottom:1px solid var(--border-color);
+}
+
+.sidebar-logo h2{
+
+  font-size:34px;
+
+  font-family:'Playfair Display',serif;
+
+  color:var(--text-color);
+
+  margin-bottom:6px;
+}
+
+.sidebar-logo p{
+
+  color:var(--light-text);
+
+  font-size:14px;
+}
+
+/* NAVIGATION */
+
+.sidebar-nav{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:10px;
+
+  margin-top:28px;
+}
+
+/* LINKS */
+
+.sidebar-nav a{
+
+  display:flex;
+  align-items:center;
+
+  gap:14px;
+
+  padding:16px 18px;
+
+  border-radius:18px;
+
+  text-decoration:none;
+
+  color:var(--light-text);
+
+  font-size:15px;
+
+  font-weight:500;
+
+  transition:0.3s ease;
+
+  position:relative;
+}
+
+/* ICON */
+
+.sidebar-nav a i{
+
+  width:20px;
+  height:20px;
+}
+
+/* TEXT */
+
+.sidebar-nav a span{
+
+  flex:1;
+}
+
+/* BADGE */
+
+.sidebar-nav a small{
+
+  min-width:22px;
+  height:22px;
+
+  border-radius:999px;
+
+  background:#f3f4f6;
+
+  color:#111111;
+
+  font-size:11px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* HOVER */
+
+.sidebar-nav a:hover{
+
+  background:var(--secondary-color);
+
+  color:var(--primary-color);
+}
+
+/* ACTIVE */
+
+.sidebar-nav a.active{
+
+  background:var(--primary-color);
+
+  color:white;
+}
+
+/* ACTIVE BADGE */
+
+.sidebar-nav a.active small{
+
+  background:white;
+
+  color:#111111;
+}
+
+/* BOTTOM */
+
+.sidebar-bottom{
+
+  padding-top:20px;
+
+  border-top:1px solid var(--border-color);
+}
+
+/* PROFILE */
+
+.sidebar-profile{
+
+  display:flex;
+  align-items:center;
+
+  gap:14px;
+
+  margin-bottom:20px;
+}
+
+.sidebar-profile img{
+
+  width:52px;
+  height:52px;
+
+  border-radius:18px;
+
+  object-fit:cover;
+}
+
+.sidebar-profile h4{
+
+  font-size:15px;
+
+  margin-bottom:4px;
+}
+
+.sidebar-profile span{
+
+  font-size:13px;
+
+  color:var(--light-text);
+}
+
+/* ACTIONS */
+
+.sidebar-actions{
+
+  display:flex;
+  align-items:center;
+
+  gap:12px;
+}
+
+/* LOGOUT */
+
+.logout-btn{
+
+  width:46px;
+  height:46px;
+
+  border-radius:50%;
+
+  border:none;
+
+  background:#fee2e2;
+
+  color:#dc2626;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+}
+
+/* ===================================================
+   DASHBOARD CONTENT
+=================================================== */
+
+.dashboard-wrapper{
+
+  margin-left:290px;
+
+  padding:34px;
+}
+
 /* HEADER */
 
 .header{
