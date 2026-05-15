@@ -232,18 +232,33 @@ body.dark-mode .header {
 ========================= */
 
 .primary-btn,
-.secondary-btn {
+.secondary-btn{
 
-  padding: 14px 28px;
+  height:42px;
 
-  border-radius: 999px;
+  padding:0 28px;
 
-  font-size: 14px;
-  font-weight: 600;
+  border-radius:999px;
 
-  cursor: pointer;
+  font-size:14px;
 
-  transition: var(--transition);
+  font-weight:600;
+
+  cursor:pointer;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  line-height:1;
+
+  transition:0.3s ease;
+
+  white-space:nowrap;
+
+  flex-shrink:0;
 }
 
 /* PRIMARY BUTTON */
@@ -336,60 +351,339 @@ body.dark-mode .header {
   transition: var(--transition);
 }
 
-.breadcrumb {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-  margin-left: 105px;
-  margin-bottom: -20px;
-}
-.breadcrumb-item + .breadcrumb-item::before {
-  content: "/";
-  padding: 0 10px;
-  color: #6c757d;
-}
-.breadcrumb-item a {
-  color: #007bff;
-  text-decoration: none;
-}
-.breadcrumb-item.active {
-  color: #6c757d;
-  pointer-events: none; /* Disables clicking the current page */
-}
+/* ===================================================
+   PREMIUM HERO
+=================================================== */
 
-/* =========================
-   SERVICE DETAIL MAIN
-========================= */
+.premium-service-hero{
 
-.service-detail-main{
+  position:relative;
 
-  display:grid;
-  grid-template-columns:1.4fr 0.7fr;
+  min-height:100vh;
 
-  gap:40px;
-  margin-top: -30px;
-
-  
-
-  align-items:start;
-}
-
-/* LEFT */
-
-.service-detail-left{
+  padding:140px 8% 100px;
 
   display:flex;
-  flex-direction:column;
+  align-items:center;
 
-  gap:40px;
+  overflow:hidden;
+
+  background-image:
+  url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1800&auto=format&fit=crop");
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
+}
+
+/* ===================================================
+   OVERLAY
+=================================================== */
+
+.hero-overlay{
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  linear-gradient(
+    90deg,
+    rgba(0,0,0,0.72),
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.15)
+  );
+}
+
+/* ===================================================
+   CONTENT
+=================================================== */
+
+.premium-hero-content{
+
+  position:relative;
+
+  z-index:2;
+
+  max-width:760px;
+}
+
+/* ===================================================
+   BREADCRUMB
+=================================================== */
+
+.premium-breadcrumb{
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  margin-bottom:30px;
+  margin-top: -60px;
+
+  flex-wrap:wrap;
+}
+
+.premium-breadcrumb a{
+
+  text-decoration:none;
+
+  color:rgba(255,255,255,0.7);
+
+  transition:0.3s ease;
+}
+
+.premium-breadcrumb a:hover{
+
+  color:white;
+}
+
+.premium-breadcrumb span{
+
+  color:white;
+
+  font-weight:600;
+}
+
+/* ===================================================
+   TAG
+=================================================== */
+
+.premium-tag{
+
+  display:inline-flex;
+
+  padding:10px 18px;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,0.14);
+
+  backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,0.12);
+
+  color:white;
+
+  font-size:14px;
+
+  margin-bottom:30px;
+}
+
+/* ===================================================
+   TITLE
+=================================================== */
+
+.premium-hero-content h1{
+
+  font-size:52px;
+
+  line-height:1.05;
+
+  color:white;
+
+  margin-bottom:28px;
+
+  font-family:'Playfair Display',serif;
+}
+
+/* ===================================================
+   TEXT
+=================================================== */
+
+.premium-hero-content p{
+
+  font-size:18px;
+
+  line-height:1.9;
+
+  color:rgba(255,255,255,0.82);
+
+  margin-bottom:42px;
+
+  max-width:680px;
+}
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+.premium-buttons{
+
+  display:flex;
+  
+  gap:18px;
+  margin-bottom:60px;
+}
+
+.primary-btn,
+.glass-btn{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  height:58px;
+
+  padding:0 32px;
+
+  border-radius:18px;
+
+  font-weight:600;
+
+  text-decoration:none;
+}
+/* GLASS BUTTON */
+
+.glass-btn{
+
+  height:58px;
+
+  padding:0 28px;
+
+  border-radius:18px;
+
+  background:rgba(255,255,255,0.12);
+
+  backdrop-filter:blur(16px);
+
+  border:1px solid rgba(255,255,255,0.16);
+
+  color:white;
+
+  text-decoration:none;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  transition:0.35s ease;
+}
+
+/* HOVER */
+
+.glass-btn:hover{
+
+  background:rgba(255,255,255,0.18);
+}
+
+/* ===================================================
+   FLOATING INFO
+=================================================== */
+
+.hero-floating-info{
+
+  display:flex;
+
+  gap:22px;
+
+  flex-wrap:wrap;
+}
+
+/* BOX */
+
+.floating-box{
+
+  min-width:220px;
+
+  background:rgba(255,255,255,0.12);
+
+  backdrop-filter:blur(18px);
+
+  border:1px solid rgba(255,255,255,0.14);
+
+  border-radius:28px;
+
+  padding:26px;
+
+  animation:floatHero 4s ease-in-out infinite;
+}
+
+/* SECOND */
+
+.floating-box:nth-child(2){
+
+  animation-delay:1.5s;
+}
+
+/* TEXT */
+
+.floating-box h3{
+
+  font-size:42px;
+
+  color:white;
+
+  margin-bottom:10px;
+}
+
+.floating-box p{
+
+  margin:0;
+
+  color:rgba(255,255,255,0.78);
+
+  font-size:15px;
+
+  line-height:1.7;
+}
+
+/* ===================================================
+   FLOAT
+=================================================== */
+
+@keyframes floatHero{
+
+  0%{
+
+    transform:translateY(0);
+  }
+
+  50%{
+
+    transform:translateY(-10px);
+  }
+
+  100%{
+
+    transform:translateY(0);
+  }
+}
+
+
+/* ===================================================
+   OVERVIEW
+=================================================== */
+.service-benefits{
+  margin-top: -40px;
+}
+.service-overview{
+
+  display:grid;
+
+  grid-template-columns:0.9fr 1.1fr;
+
+  gap:70px;
+
+  align-items:center;
+
+  padding:110px 8%;
 }
 
 /* IMAGE */
 
-.service-detail-image img{
+.overview-image img{
 
-  height:420px;
+  width:100%;
+
+  height:760px;
 
   object-fit:cover;
 
@@ -398,279 +692,321 @@ body.dark-mode .header {
 
 /* CONTENT */
 
-.service-detail-content{
+.overview-content h2{
 
-  background:var(--card-bg);
+  font-size:48px;
 
-  border:1px solid var(--border-color);
+  line-height:1.2;
 
-  border-radius:34px;
-
-  padding:50px;
-}
-
-/* TITLE */
-
-.service-detail-content h1{
-
-  font-size:64px;
-
-  line-height:1.1;
-
-  margin:20px 0 24px;
+  margin:24px 0;
 
   font-family:'Playfair Display',serif;
 }
 
-/* DESCRIPTION */
+.overview-content p{
 
-.service-description{
+  color:var(--light-text);
+
+  line-height:1.9;
+
+  margin-bottom:24px;
+}
+
+/* ===================================================
+   FEATURES
+=================================================== */
+
+.overview-features{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:22px;
+
+  margin-top:40px;
+}
+
+/* CARD */
+
+.feature-card{
+
+  background:white;
+
+  border:1px solid var(--border-color);
+
+  border-radius:26px;
+
+  padding:24px;
+
+  display:flex;
+  align-items:flex-start;
+
+  gap:18px;
+
+  transition:0.35s ease;
+}
+
+/* HOVER */
+
+.feature-card:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:
+  0 18px 40px rgba(0,0,0,0.06);
+}
+
+/* ICON */
+
+.feature-card i{
+
+  width:58px;
+  height:58px;
+
+  border-radius:18px;
+
+  background:#f8f3ef;
+
+  color:var(--primary-color);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:14px;
+
+  flex-shrink:0;
+}
+
+/* TEXT */
+
+.feature-card h4{
+
+  margin-bottom:8px;
+}
+
+.feature-card p{
+
+  margin:0;
+
+  font-size:15px;
+}
+
+/* ===================================================
+   SERVICE BENEFITS
+=================================================== */
+
+.service-benefits{
+
+  padding:110px 8%;
+
+  background:
+  linear-gradient(
+    180deg,
+    #ffffff,
+    #faf7f4
+  );
+}
+
+/* ===================================================
+   HEADER
+=================================================== */
+
+.benefits-header{
+
+  max-width:760px;
+
+  margin:auto;
+
+  text-align:center;
+
+  margin-bottom:70px;
+}
+
+/* TITLE */
+
+.benefits-header h2{
+
+  font-size:58px;
+
+  line-height:1.2;
+
+  margin:24px 0;
+
+  font-family:'Playfair Display',serif;
+}
+
+/* TEXT */
+
+.benefits-header p{
 
   color:var(--light-text);
 
   line-height:1.9;
 
   font-size:17px;
-
-  margin-bottom:40px;
 }
 
-/* FEATURES */
+/* ===================================================
+   GRID
+=================================================== */
 
-.service-features-list{
+.benefits-grid{
 
   display:grid;
+
   grid-template-columns:repeat(2,1fr);
 
-  gap:20px;
+  gap:28px;
 
-  margin-bottom:50px;
+  margin-bottom:80px;
 }
 
-/* ITEM */
+/* ===================================================
+   CARD
+=================================================== */
 
-.feature-item{
+.benefit-box{
 
-  display:flex;
-  align-items:center;
-
-  gap:12px;
-
-  padding:18px 20px;
-
-  border-radius:18px;
-
-  background:var(--secondary-color);
-}
-
-.feature-item i{
-
-  color:var(--primary-color);
-
-  width:20px;
-  height:20px;
-}
-
-/* PROCESS */
-
-.service-process{
-
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-
-  gap:20px;
-}
-
-/* BOX */
-
-.process-box{
-
-  padding:30px;
-
-  border-radius:24px;
-
-  border:1px solid var(--border-color);
-
-  text-align:center;
-}
-
-.process-box span{
-
-  font-size:42px;
-
-  font-weight:700;
-
-  color:rgba(166,106,76,0.2);
-}
-
-.process-box h3{
-
-  margin-top:14px;
-}
-
-/* RIGHT CARD */
-
-.service-pricing-card{
-
-  position:sticky;
-
-  top:120px;
-
-  background:var(--card-bg);
+  background:white;
 
   border:1px solid var(--border-color);
 
   border-radius:34px;
 
-  padding:40px;
+  padding:38px;
+
+  transition:0.35s ease;
+
+  position:relative;
+
+  overflow:hidden;
 }
 
-/* TOP */
+/* HOVER */
 
-.pricing-top{
+.benefit-box:hover{
 
-  padding-bottom:30px;
+  transform:translateY(-8px);
 
-  border-bottom:1px solid var(--border-color);
-
-  margin-bottom:30px;
+  box-shadow:
+  0 20px 50px rgba(0,0,0,0.07);
 }
 
-/* BADGE */
+/* ICON */
 
-.pricing-badge{
+.benefit-icon{
 
-  display:inline-block;
+  width:74px;
+  height:74px;
 
-  padding:10px 18px;
+  border-radius:24px;
 
-  border-radius:999px;
+  background:#f8f3ef;
 
-  background:var(--secondary-color);
+  color:var(--primary-color);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:28px;
+}
+
+/* ICON SIZE */
+
+.benefit-icon i{
+
+  width:30px;
+  height:30px;
+}
+
+/* TITLE */
+
+.benefit-box h3{
+
+  font-size:28px;
+
+  line-height:1.3;
+
+  margin-bottom:18px;
+
+  font-family:'Playfair Display',serif;
+}
+
+/* TEXT */
+
+.benefit-box p{
+
+  color:var(--light-text);
+
+  line-height:1.9;
+
+  font-size:16px;
+}
+
+/* ===================================================
+   QUOTE BOX
+=================================================== */
+
+.service-quote-box{
+
+  position:relative;
+
+  max-width:980px;
+
+  margin:auto;
+
+  background:white;
+
+  border-radius:42px;
+
+  padding:70px 60px;
+
+  text-align:center;
+
+  box-shadow:
+  0 25px 60px rgba(0,0,0,0.06);
+}
+
+/* ICON */
+
+.service-quote-box i{
+
+  width:54px;
+  height:54px;
 
   color:var(--primary-color);
 
   margin-bottom:24px;
-
-  font-size:14px;
-  font-weight:600;
 }
 
-/* PRICE */
+/* TEXT */
 
-.pricing-top h2{
+.service-quote-box p{
 
-  font-size:68px;
+  font-size:34px;
 
-  margin-bottom:10px;
+  line-height:1.6;
+
+  font-family:'Playfair Display',serif;
+
+  margin-bottom:26px;
 }
 
-.pricing-top p{
+/* AUTHOR */
+
+.service-quote-box span{
 
   color:var(--light-text);
+
+  font-size:15px;
+
+  letter-spacing:1px;
 }
 
-/* INCLUDES */
 
-.pricing-includes{
 
-  margin-bottom:30px;
-}
-
-.pricing-includes h3{
-
-  margin-bottom:24px;
-
-  font-size:24px;
-}
-
-/* LIST */
-
-.pricing-includes ul{
-
-  display:flex;
-  flex-direction:column;
-
-  gap:18px;
-
-  list-style:none;
-}
-
-.pricing-includes li{
-
-  display:flex;
-  align-items:center;
-
-  gap:12px;
-
-  color:var(--light-text);
-}
-
-.pricing-includes li i{
-
-  color:var(--primary-color);
-
-  width:18px;
-  height:18px;
-}
-
-/* META */
-
-.service-meta{
-
-  display:flex;
-  flex-direction:column;
-
-  gap:18px;
-
-  margin-bottom:40px;
-}
-
-/* ROW */
-
-.meta-row{
-
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-
-  padding:18px 0;
-
-  border-bottom:1px solid var(--border-color);
-}
-
-.meta-row span{
-
-  color:var(--light-text);
-}
-
-/* BUTTONS */
-
-.pricing-buttons{
-
-  display:flex;
-  flex-direction:column;
-
-  gap:16px;
-}
-
-/* FULL BUTTON */
-
-.full-btn{
-
-  width:100%;
-}
-
-/* OUTLINE */
-
-.dark-outline{
-
-  background:transparent;
-
-  border:1px solid var(--border-color);
-
-  color:var(--text-color);
-}
 
 
 
