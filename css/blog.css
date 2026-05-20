@@ -234,17 +234,24 @@ section{
 
   color:var(--text-color);
 }
-.icon-btn rtl-btn{
-   padding: 14px 20px;
+/* RTL BUTTON */
 
-  border-radius: 999px;
+.rtl-btn{
 
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--primary-color);
-  cursor: pointer;
+  width:46px;
+  height:46px;
 
-  transition: var(--transition);
+  border-radius:50%;
+
+  border:1px solid var(--border-color);
+
+  background:transparent;
+
+  color:var(--text-color);
+
+  cursor:pointer;
+
+  transition:0.3s ease;
 }
 /* ICON BUTTON */
 
@@ -256,6 +263,7 @@ section{
   border-radius:50%;
 
   border:1px solid var(--border-color);
+  cursor: pointer;
 
   background:transparent;
 
@@ -818,6 +826,127 @@ body.rtl-mode{
    color:var(--text-color);
 }
 
+/* =====================================
+   DARK MODE
+===================================== */
+
+body.dark-mode{
+
+  --bg-color:#111111;
+  --card-bg:#1B1B1B;
+
+  --text-color:#ffffff;
+  --light-text:#B3B3B3;
+
+  --border-color:#2A2A2A;
+}
+
+/* BODY */
+
+body.dark-mode{
+
+  background:var(--bg-color);
+
+  color:var(--text-color);
+}
+
+/* HEADER */
+
+body.dark-mode .header{
+
+  background:rgba(17,17,17,0.95);
+}
+
+/* NAVBAR */
+
+body.dark-mode .navbar{
+
+  background:var(--card-bg);
+}
+
+/* BLOG CARDS */
+
+body.dark-mode .blog-item,
+body.dark-mode .sidebar-card{
+
+  background:var(--card-bg);
+
+  border-color:var(--border-color);
+}
+
+/* SEARCH */
+
+body.dark-mode .sidebar-search{
+
+  border-color:var(--border-color);
+}
+
+body.dark-mode .sidebar-search input{
+
+  color:white;
+}
+
+/* DROPDOWN */
+
+body.dark-mode .dropdown-menu{
+
+  background:#1B1B1B;
+
+  border-color:var(--border-color);
+}
+
+body.dark-mode .dropdown-menu a:hover{
+
+  background:#2A2A2A;
+}
+
+/* FOOTER */
+
+body.dark-mode .footer{
+
+  background:#111111;
+}
+
+/* ICONS */
+
+body.dark-mode .icon-btn,
+body.dark-mode .menu-toggle,
+body.dark-mode .rtl-btn{
+
+  border-color:var(--border-color);
+
+  color:white;
+}
+
+/* =====================================
+   RTL MODE
+===================================== */
+
+body.rtl-mode{
+
+  direction:rtl;
+}
+
+/* LAYOUTS */
+
+body.rtl-mode .header,
+body.rtl-mode .navbar,
+body.rtl-mode .blog-page,
+body.rtl-mode .blog-bottom,
+body.rtl-mode .recent-post,
+body.rtl-mode .footer-grid,
+body.rtl-mode .footer-bottom{
+
+  direction:rtl;
+}
+
+/* INPUT */
+
+body.rtl-mode .sidebar-search input{
+
+  text-align:right;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -841,6 +970,10 @@ body.rtl-mode{
 }
 
 @media(max-width:1100px){
+
+  .header{
+   position:relative;
+}
 
 .header-actions{
    display:none;
@@ -903,6 +1036,14 @@ body.rtl-mode{
 }
 
 @media(max-width:768px){
+
+  .blog-sidebar{
+   gap:18px;
+}
+
+.sidebar-card{
+   padding:24px;
+}
 
 section{
    padding:70px 5%;

@@ -326,17 +326,22 @@ body.dark-mode .header {
 
   color: var(--primary-color);
 }
-.icon-btn rtl-btn{
-   padding: 14px 20px;
+.rtl-btn{
 
-  border-radius: 999px;
+  width:46px;
+  height:46px;
 
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--primary-color);
-  cursor: pointer;
+  border-radius:50%;
 
-  transition: var(--transition);
+  border:1px solid var(--border-color);
+
+  background:transparent;
+
+  color:var(--text-color);
+
+  cursor:pointer;
+
+  transition:0.3s ease;
 }
 
 
@@ -1044,7 +1049,155 @@ body.dark-mode .header {
  display: flex;
  gap:100px;
  justify-content: space-between;
+}/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode{
+
+  --bg-color:#111111;
+  --card-bg:#1B1B1B;
+
+  --text-color:#ffffff;
+  --light-text:#B3B3B3;
+
+  --border-color:#2A2A2A;
 }
+
+/* BODY */
+
+body.dark-mode{
+
+  background:var(--bg-color);
+
+  color:var(--text-color);
+}
+
+/* HEADER */
+
+body.dark-mode .header{
+
+  background:rgba(17,17,17,0.92);
+}
+
+/* NAVBAR */
+
+body.dark-mode .navbar{
+
+  background:var(--card-bg);
+}
+
+/* CARDS */
+
+body.dark-mode .category-card,
+body.dark-mode .additional-service-card,
+body.dark-mode .process-item{
+
+  background:var(--card-bg);
+
+  border-color:var(--border-color);
+}
+
+/* EXPERIENCE */
+
+body.dark-mode .experience-card{
+
+  background:#1F1F1F;
+}
+
+/* FOOTER */
+
+body.dark-mode .footer{
+
+  background:#111111;
+}
+
+/* INPUT BUTTONS */
+
+body.dark-mode .icon-btn,
+body.dark-mode .menu-toggle{
+
+  border-color:var(--border-color);
+
+  color:white;
+}
+
+/* DROPDOWN */
+
+body.dark-mode .dropdown-menu{
+
+  background:#1B1B1B;
+
+  border-color:var(--border-color);
+}
+
+body.dark-mode .dropdown-menu a:hover{
+
+  background:#2A2A2A;
+}
+
+/* WHITE BUTTON */
+
+body.dark-mode .white-btn{
+
+  background:white;
+
+  color:#111111;
+}
+
+/* =========================================
+   RTL MODE
+========================================= */
+
+body.rtl-mode{
+
+  direction:rtl;
+}
+
+/* HEADER */
+
+body.rtl-mode .header{
+
+  direction:rtl;
+}
+
+/* NAVBAR */
+
+body.rtl-mode .navbar{
+
+  direction:rtl;
+}
+
+/* HERO */
+
+body.rtl-mode .hero-buttons{
+
+  direction:rtl;
+}
+
+/* FEATURED */
+
+body.rtl-mode .featured-service{
+
+  direction:rtl;
+}
+
+/* PROCESS */
+
+body.rtl-mode .process-item{
+
+  direction:rtl;
+}
+
+/* FOOTER */
+
+body.rtl-mode .footer-grid,
+body.rtl-mode .footer-bottom{
+
+  direction:rtl;
+}
+
+
 
 /* RESPONSIVE */
 

@@ -100,11 +100,25 @@ body {
     line-height:1.4;
 }
 
+.rtl-btn{
+ 
+ width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid #8b5e3c;
+    background:#222;
+    color:#fff;
+    cursor:pointer;
+    font-size: 12px;
+    margin-left: 60px;
+}
+
+
 /* TOGGLE */
 
 .theme-toggle{
-    width:36px;
-    height:36px;
+    width:40px;
+    height:40px;
 
     border:none;
 
@@ -163,13 +177,40 @@ body {
 
     border-radius:12px;
 
-    background:;
+    background:rgb(146, 95, 2);
     color:#fff;
 
     font-size:14px;
     font-weight:600;
 
     cursor:pointer;
+}
+
+.options{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+ 
+  margin-bottom:16px;
+  margin-top: 16px;
+}
+ 
+.remember{
+  display:flex;
+  align-items:center;
+  gap:6px;
+ 
+  color:#ffffff;
+ 
+  font-size:12px;
+}
+ 
+.options a{
+  color:#0c0900;
+ 
+  text-decoration:none;
+ 
+  font-size:12px;
 }
 
 /* DIVIDER */
@@ -236,4 +277,134 @@ body {
     justify-content:center;
     align-items:center;
     gap:6px;
+}
+.signup-text{
+  text-align:center;
+ 
+  color:#000814;
+ 
+  margin-top:16px;
+ 
+  font-size:12px;
+}
+ 
+.signup-text a{
+  color:#000;;
+ 
+  text-decoration:none;
+ 
+  font-weight:600;
+}
+/* ======================================
+   DARK MODE
+====================================== */
+
+body.dark-mode{
+
+  --bg-color:#111111;
+
+  --text-color:#ffffff;
+}
+
+/* BODY */
+
+body.dark-mode{
+
+  background:#111111;
+  color:#ffffff;
+}
+
+/* CARD */
+
+body.dark-mode .login-card{
+
+  background:#1B1B1B;
+}
+
+/* INPUTS */
+
+body.dark-mode .login-form input{
+
+  background:#151515;
+
+  border-color:#2A2A2A;
+
+  color:white;
+}
+
+body.dark-mode .login-form input::placeholder{
+
+  color:#8A8A8A;
+}
+
+/* SOCIAL BUTTONS */
+
+body.dark-mode .social-btn{
+
+  background:#151515;
+
+  border-color:#2A2A2A;
+
+  color:white;
+}
+
+/* DIVIDER */
+
+body.dark-mode .divider::before{
+
+  background:#2A2A2A;
+}
+
+body.dark-mode .divider span{
+
+  background:#1B1B1B;
+
+  color:#B3B3B3;
+}
+
+/* TEXT */
+
+body.dark-mode .login-card p,
+body.dark-mode .signup-text,
+body.dark-mode .remember,
+body.dark-mode .options a{
+
+  color:#B3B3B3;
+}
+
+/* TOGGLE */
+
+body.dark-mode .theme-toggle{
+
+  background:#2A2A2A;
+
+  color:white;
+}
+
+/* ======================================
+   RTL MODE
+====================================== */
+
+body.rtl-mode{
+
+  direction:rtl;
+}
+
+/* FIX FLEX */
+
+body.rtl-mode .login-top,
+body.rtl-mode .options,
+body.rtl-mode .social-login{
+
+  direction:rtl;
+}
+
+/* INPUT ALIGN */
+
+body.rtl-mode .login-form input{
+
+  text-align:right;
+}
+body.dark-mode .signup-text a{
+   color:#f5f5f5;
 }
