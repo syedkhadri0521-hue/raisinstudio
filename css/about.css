@@ -310,6 +310,37 @@ a{
 
   color:var(--text-color);
 }
+.icon-btn rtl-btn{
+   padding: 14px 20px;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+.rtl-btn{
+
+  padding:14px 20px;
+
+  border-radius:999px;
+
+  border:1px solid var(--border-color);
+
+  background:transparent;
+
+  color:var(--text-color);
+
+  font-size:14px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+}
 
 /* HERO */
 
@@ -806,83 +837,445 @@ a{
  justify-content: space-between;
 }
 
+/* RTL MODE */
+
+body.rtl-mode{
+
+  direction: rtl;
+}
+
+/* FIX FLEX */
+
+body.rtl-mode .header,
+body.rtl-mode .navbar,
+body.rtl-mode .hero,
+body.rtl-mode .about-section,
+body.rtl-mode .services-grid,
+body.rtl-mode .why-grid,
+body.rtl-mode .process-grid,
+body.rtl-mode .pricing-grid,
+body.rtl-mode .footer-grid{
+
+  direction: rtl;
+}
+
+body.dark-mode .header{
+
+  background:rgba(17,17,17,0.9);
+}
+/* DARK MODE */
+
+body.dark-mode{
+
+  --bg-color:#111111;
+  --card-bg:#1B1B1B;
+
+  --text-color:#ffffff;
+  --light-text:#B3B3B3;
+
+  --border-color:#2A2A2A;
+}
+
+/* HEADER */
+
+body.dark-mode .header{
+
+  background:rgba(17,17,17,0.95);
+}
+
+/* RTL */
+
+body.rtl-mode{
+
+  direction:rtl;
+}
+
+/* SMOOTH */
+
+*{
+
+  transition:
+  background 0.3s ease,
+  color 0.3s ease,
+  border-color 0.3s ease;
+}
+
+
+/* HAMBURGER */
+
+.menu-toggle{
+
+  display:none;
+
+  width:46px;
+  height:46px;
+
+  border-radius:50%;
+
+  border:1px solid var(--border-color);
+
+  background:transparent;
+
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  color:var(--text-color);
+}
+
+/* =========================
+   DARK MODE COMPLETE FIX
+========================= */
+
+body.dark-mode{
+
+  background:#111111;
+  color:#ffffff;
+}
+
+/* Sections */
+
+body.dark-mode section,
+body.dark-mode footer{
+  background:#111111;
+}
+
+/* Cards */
+
+body.dark-mode .journey-card,
+body.dark-mode .value-card,
+body.dark-mode .team-card,
+body.dark-mode .cta-box,
+body.dark-mode .dropdown-menu{
+
+  background:#1B1B1B;
+
+  border-color:#2A2A2A;
+}
+
+/* Buttons */
+
+body.dark-mode .secondary-btn,
+body.dark-mode .icon-btn,
+body.dark-mode .rtl-btn{
+
+  border-color:#2A2A2A;
+
+  color:#ffffff;
+}
+
+/* Navbar Links */
+
+body.dark-mode .navbar a,
+body.dark-mode .footer-grid a{
+
+  color:#ffffff;
+}
+
+/* Paragraphs */
+
+body.dark-mode p{
+
+  color:#B3B3B3;
+}
+
+/* Footer */
+
+body.dark-mode .footer{
+
+  border-color:#2A2A2A;
+}
+
+/* Hero Overlay */
+
+body.dark-mode .about-hero::before{
+
+  background:rgba(0,0,0,0.7);
+}
+
+/* =========================
+   RTL MODE COMPLETE FIX
+========================= */
+
+body.rtl-mode{
+  direction:rtl;
+}
+
+/* Text */
+
+body.rtl-mode .hero-content,
+body.rtl-mode .about-left,
+body.rtl-mode .section-title,
+body.rtl-mode .footer-grid{
+  text-align:right;
+}
+
+/* Flex Reverse */
+
+body.rtl-mode .header,
+body.rtl-mode .navbar,
+body.rtl-mode .header-actions,
+body.rtl-mode .cta-buttons{
+  flex-direction:row-reverse;
+}
+
+/* Grid Alignment */
+
+body.rtl-mode .about-company{
+  direction:rtl;
+}
+
+/* Dropdown */
+
+body.rtl-mode .dropdown-menu{
+  left:auto;
+  right:0;
+}
+
 /* RESPONSIVE */
 
-@media(max-width:1200px){
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:1200px){
 
   .journey-grid,
   .values-grid,
   .team-grid{
-
     grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media(max-width:992px){
-
-  .navbar{
-    display:none;
-  }
-
-  .about-company{
-
-    grid-template-columns:1fr;
-  }
-
-  .hero-content h1{
-
-    font-size:56px;
   }
 
   .section-title h2,
   .about-left h2{
-
-    font-size:42px;
+    font-size:46px;
   }
 
-  .footer-grid{
-
-    grid-template-columns:repeat(2,1fr);
-  }
 }
 
-@media(max-width:768px){
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width:1100px){
 
   section{
-
-    padding:70px 5%;
+    padding:80px 6%;
   }
 
   .header{
-
-    padding:20px 5%;
+    padding:20px 6%;
   }
+
+  /* HAMBURGER */
+
+  .header-actions{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+    margin-left:auto;
+  }
+
+  /* MOBILE NAVBAR */
+
+  .navbar{
+
+    position:absolute;
+
+    top:100%;
+    left:0;
+
+    width:100%;
+
+    background:var(--card-bg);
+
+    border-top:1px solid var(--border-color);
+
+    padding:30px 6%;
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:24px;
+  }
+
+  .navbar.active{
+    display:flex;
+  }
+
+  /* HERO */
+
+  .about-hero{
+    min-height:60vh;
+    padding:120px 20px 80px;
+  }
+
+  .hero-content{
+    max-width:700px;
+    margin:auto;
+  }
+
+  .hero-content h1{
+    font-size:54px;
+  }
+
+  /* ABOUT */
+
+  .about-company{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  .about-right img{
+    height:550px;
+  }
+
+  /* TITLES */
+
+  .section-title h2,
+  .about-left h2{
+    font-size:42px;
+  }
+
+  /* GRID */
+
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:768px){
+
+  section{
+    padding:60px 5%;
+  }
+
+  .header{
+    padding:18px 5%;
+  }
+
+  /* HERO */
+
+  .about-hero{
+    min-height:70vh;
+    padding:120px 20px 60px;
+  }
+
+  .hero-content{
+    max-width:100%;
+    padding:0 10px;
+  }
+
+  .hero-content h1{
+
+    font-size:30px;
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+  }
+
+  .hero-content p{
+
+    font-size:14px;
+
+    line-height:1.8;
+  }
+
+  .hero-tag{
+    font-size:12px;
+    padding:8px 14px;
+  }
+
+  /* ABOUT */
+
+  .about-company{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .about-left h2{
+    font-size:30px;
+  }
+
+  .about-right img{
+    height:320px;
+  }
+
+  .about-details{
+    gap:18px;
+  }
+
+  /* TITLES */
+
+  .section-title{
+    margin-bottom:40px;
+  }
+
+  .section-title h2{
+    font-size:32px;
+  }
+
+  /* GRID */
 
   .journey-grid,
   .values-grid,
   .team-grid,
   .footer-grid{
-
     grid-template-columns:1fr;
   }
 
-  .hero-content h1{
+  /* CARDS */
 
-    font-size:42px;
+  .journey-card,
+  .value-card{
+    padding:30px;
   }
 
-  .about-right img{
-
-    height:450px;
+  .team-card img{
+    height:320px;
   }
+
+  /* CTA */
 
   .cta-box{
+    padding:50px 24px;
+  }
 
-    padding:60px 30px;
+  .cta-box h2{
+    font-size:32px;
   }
 
   .cta-buttons{
-
     flex-direction:column;
   }
+
+  .cta-buttons button{
+    width:100%;
+  }
+
+  /* FOOTER */
+
+  .footer-bottom{
+
+    flex-direction:column;
+
+    gap:16px;
+
+    text-align:center;
+  }
+
 }

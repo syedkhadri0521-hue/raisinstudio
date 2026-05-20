@@ -25,7 +25,7 @@
 
   <!-- CSS -->
 
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="css/about.css">
 
 </head>
 
@@ -44,6 +44,10 @@
       <h2>Rasin Studio</h2>
 
     </div>
+
+    <button class="menu-toggle">
+   <i data-lucide="menu"></i>
+</button>
 
     <nav class="navbar">
 
@@ -80,13 +84,18 @@
 
     </nav>
 
-    <div class="header-actions">
+    
 
-      <button class="icon-btn">
-        <i data-lucide="moon"></i>
-      </button>
+     <div class="header-actions">
 
-     <button class="icon-btn rtl-btn">RTL</button>
+      <button class="icon-btn dark-mode-btn">
+
+  <i data-lucide="moon"></i>
+
+</button>
+
+     
+    <button class="icon-btn rtl-btn">RTL</button>
 
       <button class="primary-btn">
         Login
@@ -475,9 +484,11 @@
 
   <!-- ICONS -->
 
-  <script>
-    lucide.createIcons();
-  </script>
+<script>
+  lucide.createIcons();
+</script>
+
+<script src="js/main.js"></script>
 
 </body>
 

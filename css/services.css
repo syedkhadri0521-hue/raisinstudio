@@ -1048,66 +1048,311 @@ body.dark-mode .header {
 
 /* RESPONSIVE */
 
-@media(max-width:1200px){
+/* =========================================
+   RESPONSIVE
+========================================= */
 
-  .categories-grid,
-  .experience-grid{
+/* =========================================
+   HAMBURGER
+========================================= */
 
-    grid-template-columns:repeat(2,1fr);
-  }
+.menu-toggle{
+
+  display:none;
+
+  width:46px;
+  height:46px;
+
+  border-radius:50%;
+
+  border:1px solid var(--border-color);
+
+  background:transparent;
+
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  color:var(--text-color);
 }
 
-@media(max-width:992px){
 
-  .featured-service,
-  .design-process{
+/* =========================================
+   RESPONSIVE
+========================================= */
 
-    grid-template-columns:1fr;
+@media (max-width:1200px){
+
+  .categories-grid,
+  .additional-services-grid,
+  .experience-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
-  .hero-content h1{
-
-    font-size:62px;
-  }
-
+  .section-title h2,
   .featured-content h2,
   .process-left h2,
   .consultation-content h2{
-
-    font-size:42px;
+    font-size:46px;
   }
+
 }
 
-@media(max-width:768px){
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width:1100px){
 
   section{
-
-    padding:70px 5%;
+    padding:80px 6%;
   }
 
-  .categories-grid,
-  .experience-grid{
+  .header{
+    padding:20px 6%;
+  }
 
+  /* HAMBURGER */
+
+  .header-actions{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+    margin-left:auto;
+  }
+
+  /* MOBILE NAVBAR */
+
+  .navbar{
+
+    position:absolute;
+
+    top:100%;
+    left:0;
+
+    width:100%;
+
+    background:var(--card-bg);
+
+    border-top:1px solid var(--border-color);
+
+    padding:30px 6%;
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:24px;
+  }
+
+  .navbar.active{
+    display:flex;
+  }
+
+  /* HERO */
+
+  .services-hero{
+    min-height:75vh;
+    padding:140px 20px 80px;
+  }
+
+  .hero-content{
+    max-width:700px;
+    margin:auto;
+  }
+
+  .hero-content h1{
+    font-size:54px;
+  }
+
+  /* FEATURED */
+
+  .featured-service{
     grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  .featured-image img{
+    height:500px;
+  }
+
+  /* PROCESS */
+
+  .design-process{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  /* TITLES */
+
+  .featured-content h2,
+  .process-left h2,
+  .consultation-content h2,
+  .section-title h2{
+    font-size:42px;
+  }
+
+  /* FOOTER */
+
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:768px){
+
+  section{
+    padding:60px 5%;
+  }
+
+  .header{
+    padding:18px 5%;
+  }
+
+  /* HERO */
+
+  .services-hero{
+    min-height:75vh;
+    padding:120px 20px 60px;
+  }
+
+  .hero-content{
+    max-width:100%;
+    padding:0 10px;
   }
 
   .hero-content h1{
 
-    font-size:42px;
+    font-size:30px;
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+  }
+
+  .hero-content p{
+
+    font-size:14px;
+
+    line-height:1.8;
+  }
+
+  .hero-tag{
+    font-size:12px;
+    padding:8px 14px;
   }
 
   .hero-buttons{
-
     flex-direction:column;
+    width:100%;
+  }
+
+  .hero-buttons button{
+    width:100%;
+  }
+
+  /* FEATURED */
+
+  .featured-service{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .featured-content h2{
+    font-size:30px;
   }
 
   .featured-image img{
-
-    height:450px;
+    height:320px;
   }
+
+  /* TITLES */
+
+  .section-title{
+    margin-bottom:40px;
+  }
+
+  .section-title h2,
+  .process-left h2,
+  .consultation-content h2{
+    font-size:32px;
+  }
+
+  /* GRIDS */
+
+  .categories-grid,
+  .additional-services-grid,
+  .experience-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* CARDS */
+
+  .category-content,
+  .additional-service-card,
+  .process-item{
+    padding:30px;
+  }
+
+  .category-image img{
+    height:220px;
+  }
+
+  /* PROCESS */
+
+  .design-process{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .process-item{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  /* EXPERIENCE */
 
   .experience-card{
-
-    padding:60px 30px;
+    padding:50px 24px;
   }
+
+  .experience-card h2{
+    font-size:32px;
+    margin-bottom:40px;
+  }
+
+  .experience-grid h3{
+    font-size:38px;
+  }
+
+  /* CONSULTATION */
+
+  .consultation-content h2{
+    font-size:32px;
+  }
+
+  /* FOOTER */
+
+  .footer-bottom{
+
+    flex-direction:column;
+
+    gap:16px;
+
+    text-align:center;
+  }
+
 }

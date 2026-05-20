@@ -795,6 +795,29 @@ body.rtl-mode{
   border-color 0.3s ease;
 }
 
+/* HAMBURGER */
+
+.menu-toggle{
+
+   display:none;
+
+   width:46px;
+   height:46px;
+
+   border-radius:50%;
+
+   border:1px solid var(--border-color);
+
+   background:transparent;
+
+   align-items:center;
+   justify-content:center;
+
+   cursor:pointer;
+
+   color:var(--text-color);
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -817,92 +840,96 @@ body.rtl-mode{
   }
 }
 
-@media (max-width: 992px) {
+@media(max-width:1100px){
 
-  .navbar {
-    display: none;
-  }
-
-  .hero,
-  .about-section,
-  .contact-section {
-
-    grid-template-columns: 1fr;
-  }
-
-  .hero-content h1 {
-
-    font-size: 56px;
-  }
-
-  .section-title h2,
-  .about-content h2,
-  .contact-info h2 {
-
-    font-size: 42px;
-  }
-
-  .footer-grid {
-
-    grid-template-columns: repeat(2, 1fr);
-  }
+.header-actions{
+   display:none;
 }
 
-@media (max-width: 768px) {
+.menu-toggle{
+   display:flex;
+   margin-left:auto;
+}
 
-  section {
+.navbar{
 
-    padding: 70px 5%;
-  }
+   position:absolute;
 
-  .header {
+   top:100%;
+   left:0;
 
-    padding: 20px 5%;
-  }
+   width:100%;
 
-  .header-actions {
+   background:var(--card-bg);
 
-    display: none;
-  }
+   border-top:1px solid var(--border-color);
 
-  .hero-content h1 {
+   padding:30px 5%;
 
-    font-size: 42px;
-  }
+   display:none;
 
-  .section-title h2,
-  .cta-box h2 {
+   flex-direction:column;
 
-    font-size: 34px;
-  }
+   align-items:flex-start;
 
-  .hero-buttons,
-  .cta-buttons,
-  .hero-stats {
+   gap:24px;
+}
 
-    flex-direction: column;
-  }
+.navbar.active{
+   display:flex;
+}
 
-  .services-grid,
-  .portfolio-grid,
-  .pricing-grid,
-  .testimonial-grid,
-  .process-grid,
-  .why-grid,
-  .trusted-grid,
-  .footer-grid {
+/* BLOG LAYOUT */
 
-    grid-template-columns: 1fr;
-  }
+.blog-page{
+   grid-template-columns:1fr;
+}
 
-  .hero-image img,
-  .about-images img {
+.blog-sidebar{
+   position:static;
+}
 
-    height: 450px;
-  }
+.blog-grid{
+   grid-template-columns:1fr 1fr;
+}
 
-  .cta-box {
+.featured-content h1{
+   font-size:46px;
+}
 
-    padding: 60px 30px;
-  }
+.footer-grid{
+   grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+
+section{
+   padding:70px 5%;
+}
+
+.header{
+   padding:20px 5%;
+}
+
+.blog-grid{
+   grid-template-columns:1fr;
+}
+
+.featured-content h1{
+   font-size:36px;
+}
+
+.featured-image img{
+   height:420px;
+}
+
+.footer-grid{
+   grid-template-columns:1fr;
+}
+
+.footer-bottom{
+   flex-direction:column;
+   gap:20px;
+}
 }

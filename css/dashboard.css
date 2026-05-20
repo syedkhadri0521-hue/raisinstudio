@@ -48,7 +48,7 @@ body{
 
   min-height:100vh;
 
-  background:#f7f7f7;
+  background:var(--bg-color);
 }
 
 /* ===================================================
@@ -901,6 +901,106 @@ body.dark-mode .logout-btn{
 
   color:#ffb4b4;
 }
+ 
+/* =========================
+   EXTRA DARK MODE FIXES
+========================= */
+
+body.dark-mode .dashboard-main{
+  background:#111111;
+}
+
+body.dark-mode .dashboard-layout{
+  background:#111111;
+}
+
+body.dark-mode .activity-item{
+  border-color:#2A2A2A;
+}
+
+body.dark-mode .search-box input::placeholder{
+  color:#888;
+}
+
+body.dark-mode .icon-btn i{
+  color:white;
+}
+
+body.dark-mode .badge{
+  color:white;
+}
+
+/* MENU BUTTON */
+
+.menu-toggle{
+    display:none;
+}
+
+/* MENU BUTTON */
+
+.menu-toggle{
+    display:none;
+}
+
+/* ======================================
+   MOBILE SIDEBAR
+====================================== */
+
+@media(max-width:992px){
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .sidebar{
+        position:fixed;
+
+        top:0;
+        left:-100%;
+
+        width:280px;
+        height:100vh;
+
+        z-index:1000;
+
+        transition:0.4s ease;
+    }
+
+    .sidebar.show-sidebar{
+        left:0;
+    }
+
+    .dashboard-layout{
+        grid-template-columns:1fr;
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .sidebar{
+        position:fixed;
+
+        top:0;
+        left:-100%;
+
+        width:280px;
+        height:100vh;
+
+        z-index:999;
+
+        transition:0.4s ease;
+    }
+
+    .sidebar.active{
+        left:0;
+    }
+}
 
 /* ===================================================
    RESPONSIVE
@@ -964,15 +1064,7 @@ body.dark-mode .logout-btn{
 
 /* RESPONSIVE */
 
-@media(max-width:1200px){
 
-  .journey-grid,
-  .values-grid,
-  .team-grid{
-
-    grid-template-columns:repeat(2,1fr);
-  }
-}
 
 @media(max-width:992px){
 

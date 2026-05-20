@@ -3,29 +3,22 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Rasin Studio - Home 2</title>
+  <title>Rasin Art & Home Decor Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- GOOGLE FONTS -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- LUCIDE -->
-
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- FONT AWESOME -->
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- CSS -->
 
-  <link rel="stylesheet" href="home2.css">
+  <link rel="stylesheet" href="css/home2.css">
 
 </head>
 
@@ -44,6 +37,10 @@
       <h2>Rasin Studio</h2>
 
     </div>
+
+    <button class="menu-toggle">
+   <i data-lucide="menu"></i>
+</button>
 
     <nav class="navbar">
 
@@ -84,9 +81,9 @@
 
       <!-- DARK MODE -->
 
-      <button class="icon-btn" id="theme-toggle">
-        <i data-lucide="moon"></i>
-      </button>
+      <button class="icon-btn dark-mode-btn">
+   <i data-lucide="moon"></i>
+</button>
 
       <!-- RTL -->
 
@@ -535,12 +532,14 @@
 
   </footer>
 
-  <!-- JS -->
-<script src="main.js"></script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
 
 <script>
-  lucide.createIcons();
+   lucide.createIcons();
 </script>
+
+<script src="js/main.js"></script>
 
 </body>
 
