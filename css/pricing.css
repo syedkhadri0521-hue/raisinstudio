@@ -326,17 +326,24 @@ body.dark-mode .header {
 
   color: var(--primary-color);
 }
-.icon-btn rtl-btn{
-   padding: 14px 20px;
+/* RTL BUTTON */
 
-  border-radius: 999px;
+.rtl-btn{
 
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--primary-color);
-  cursor: pointer;
+  width:46px;
+  height:46px;
 
-  transition: var(--transition);
+  border-radius:50%;
+
+  border:1px solid var(--border-color);
+
+  background:transparent;
+
+  color:var(--text-color);
+
+  cursor:pointer;
+
+  transition:0.3s ease;
 }
 /* =========================
    PRICING SHOWCASE
@@ -946,80 +953,299 @@ body.dark-mode .header {
  justify-content: space-between;
 }
 
+/* HAMBURGER */
+
+.menu-toggle{
+
+  display:none;
+
+  width:46px;
+  height:46px;
+
+  border-radius:50%;
+
+  border:1px solid var(--border-color);
+
+  background:transparent;
+
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  color:var(--text-color);
+}
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+body.dark-mode{
+
+  --bg-color:#111111;
+  --card-bg:#1B1B1B;
+
+  --text-color:#ffffff;
+  --light-text:#B3B3B3;
+
+  --border-color:#2A2A2A;
+}
+
+/* BODY */
+
+body.dark-mode{
+
+  background:var(--bg-color);
+
+  color:var(--text-color);
+}
+
+/* HEADER */
+
+body.dark-mode .header{
+
+  background:rgba(17,17,17,0.92);
+}
+
+/* HERO */
+
+body.dark-mode .pricing-hero{
+
+  background:linear-gradient(
+    180deg,
+    #181818,
+    #111111
+  );
+}
+
+/* FLOATING CARDS */
+
+body.dark-mode .floating-pricing-card{
+
+  background:#1B1B1B;
+
+  border-color:var(--border-color);
+}
+
+/* PRICING */
+
+body.dark-mode .pricing-card,
+body.dark-mode .benefit-card{
+
+  background:var(--card-bg);
+
+  border-color:var(--border-color);
+}
+
+/* DROPDOWN */
+
+body.dark-mode .dropdown-menu{
+
+  background:#1B1B1B;
+
+  border-color:var(--border-color);
+}
+
+body.dark-mode .dropdown-menu a:hover{
+
+  background:#2A2A2A;
+}
+
+/* FOOTER */
+
+body.dark-mode .footer{
+
+  background:#111111;
+}
+
+/* ICONS */
+
+body.dark-mode .icon-btn,
+body.dark-mode .rtl-btn,
+body.dark-mode .menu-toggle,
+body.dark-mode .social-icons a{
+
+  border-color:var(--border-color);
+
+  color:white;
+}
+
+/* =====================================
+   RTL MODE
+===================================== */
+
+body.rtl-mode{
+
+  direction:rtl;
+}
+
+body.rtl-mode .header,
+body.rtl-mode .navbar,
+body.rtl-mode .hero-buttons,
+body.rtl-mode .pricing-grid,
+body.rtl-mode .benefits-content,
+body.rtl-mode .benefits-grid,
+body.rtl-mode .footer-grid,
+body.rtl-mode .footer-bottom{
+
+  direction:rtl;
+}
+
 
 /* RESPONSIVE */
 
-@media(max-width:1200px){
+/* =====================================
+   RESPONSIVE
+===================================== */
 
-  .process-grid{
+@media(max-width:1100px){
 
-    grid-template-columns:repeat(2,1fr);
+  .header{
+    position:relative;
   }
-}
 
-@media(max-width:992px){
+  /* HAMBURGER */
 
-  .service-detail-section,
-  .benefits-section{
+  .menu-toggle{
+    display:flex;
+    margin-left:auto;
+  }
 
+  /* HIDE ACTIONS */
+
+  .header-actions{
+    display:none;
+  }
+
+  /* MOBILE NAV */
+
+  .navbar{
+
+    position:absolute;
+
+    top:100%;
+    left:0;
+
+    width:100%;
+
+    background:var(--card-bg);
+
+    border-top:1px solid var(--border-color);
+
+    padding:30px 5%;
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:24px;
+
+    z-index:999;
+  }
+
+  .navbar.active{
+    display:flex;
+  }
+
+  /* HERO */
+
+  .pricing-hero h1{
+    font-size:58px;
+  }
+
+  /* GRID */
+
+  .pricing-grid{
     grid-template-columns:1fr;
   }
 
-  .hero-content h1{
-
-    font-size:56px;
-  }
-
-  .detail-content h2,
-  .benefits-left h2,
-  .section-title h2,
-  .cta-box h2{
-
-    font-size:42px;
+  .benefits-content{
+    grid-template-columns:1fr;
   }
 
   .footer-grid{
-
     grid-template-columns:repeat(2,1fr);
   }
+
+  /* FLOATING */
+
+  .floating-pricing-card{
+    display:none;
+  }
 }
+
+/* TABLET */
 
 @media(max-width:768px){
 
   section{
-
     padding:70px 5%;
   }
 
-  .process-grid,
-  .benefits-right,
-  .footer-grid{
-
-    grid-template-columns:1fr;
+  .pricing-hero{
+    padding:130px 5% 100px;
   }
 
-  .hero-content h1{
-
+  .pricing-hero h1{
     font-size:42px;
   }
 
-  .detail-image img{
-
-    height:450px;
+  .section-heading h2,
+  .benefits-left h2{
+    font-size:36px;
   }
 
-  .cta-box{
-
-    padding:60px 30px;
+  .hero-buttons{
+    flex-direction:column;
+    align-items:center;
   }
 
-  .header-actions{
-
-    display:none;
+  .benefits-grid{
+    grid-template-columns:1fr;
   }
 
-  .navbar{
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
 
-    display:none;
+  .footer-bottom{
+    flex-direction:column;
+    gap:18px;
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+  .logo h2{
+    font-size:24px;
+  }
+
+  .pricing-hero h1{
+    font-size:34px;
+  }
+
+  .pricing-hero p{
+    font-size:16px;
+  }
+
+  .pricing-card{
+    padding:34px 24px;
+  }
+
+  .price h2{
+    font-size:44px;
+  }
+
+  .benefit-card{
+    padding:28px;
+  }
+
+  .section-heading h2,
+  .benefits-left h2{
+    font-size:30px;
   }
 }
